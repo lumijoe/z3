@@ -1,0 +1,88 @@
+@charset "UTF-8";
+a {
+  color: #232323;
+}
+
+.l-search {
+  margin: 20px auto;
+  width: 50%;
+  max-width: 450px;
+  text-align: center;
+  border: 1px solid #232323;
+  display: flex;
+  justify-content: space-evenly;
+}
+.l-search input {
+  width: 90%;
+}
+.l-search span {
+  pointer-events: none;
+}
+
+.product-list {
+  display: none;
+  /* 初期表示は非表示 */
+}
+
+.product-list.active {
+  display: flex;
+  /* 有効なリストを表示 */
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.product-list li {
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.product-list li:hover {
+  background-color: #e0f7fa;
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  color: #757575;
+}
+
+.product-list li:focus-within {
+  outline: 2px solid blue; /* フォーカス時に青いアウトライン */
+  outline-offset: 2px; /* アウトラインのオフセット */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.left-column, .right-column {
+  width: 45%;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.category {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #dfa3a3;
+}
+
+.product-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-list li {
+  margin: 5px 0;
+}
+
+.highlight {
+  color: red;
+}/*# sourceMappingURL=products.css.map */
