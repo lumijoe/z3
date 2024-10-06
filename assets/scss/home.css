@@ -88,4 +88,15 @@ li, ol {
   font-size: 18px;
   padding-top: 8px;
   font-weight: bold;
+}
+
+.l-news {
+  background-color: aquamarine;
+  height: auto;
+  width: 70%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }/*# sourceMappingURL=home.css.map */
