@@ -3,6 +3,28 @@
 @use "./layout/header";
 @use "./common/layout";
 
+// l-hero
+.l-hero {
+    background-color: #232323;
+    height: 400px;
+    img {
+        width:100%;
+        height: 400px;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        li div img {
+            width:100%;
+        height: 400px;
+        aspect-ratio: 600 / 400;
+        aspect-ratio: ;
+        
+        }
+    }
+
+}
+
 // l-topics
 .l-topics {
     background-color: rgb(255, 255, 255);
