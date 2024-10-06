@@ -40,6 +40,7 @@ li, ol {
 .l-hero {
   background-color: #232323;
   height: 400px;
+  overflow-x: hidden;
 }
 .l-hero img {
   min-width: 100%;
