@@ -1,3 +1,9 @@
+## zero003の当初Gitも不具合でz3に１０／07変更済み
+wordpressのカスタムテーマはまだzero003のものを使用しているので
+どこかでz3に変更が必要
+
+
+
 ## ホバーから外れたらすぐに結果表示がどこかに行ってしまう仕様（今回はこれではないがコード保持）
 
 document.addEventListener('DOMContentLoaded', function () {
