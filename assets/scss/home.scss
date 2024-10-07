@@ -22,6 +22,31 @@
     }
 
 }
+.l-hero2 {
+    background-color: #232323;
+    height: 400px;
+    overflow-x: hidden;
+    img {
+        min-width:100%;
+        max-height: 400px;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        li div img {
+            width:100%;
+        height: 400px;
+        }
+    }
+}
+.slider {
+    width: 94%;
+    margin: 0 auto;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
 
 // l-topics
 .l-topics {
