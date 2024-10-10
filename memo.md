@@ -298,3 +298,5 @@ item.setAttribute('tabindex', '0');
     paused: false,                // 自動再生
   });
 </script>
+
+## ACFでフィールド変更しても前後の記事の変更がいきているかどうかをチェック
