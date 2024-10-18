@@ -3,6 +3,7 @@ lkcodeのドライブ
 
 Git
 https://github.com/lumijoe/zero003
+変更z3に変更
 
 サイト
 https://lkcodetest.sakura.ne.jp/zero003/
