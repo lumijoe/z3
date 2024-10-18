@@ -14,9 +14,9 @@ get_header('product');
     <section style="background-color: aqua; height: 214px;">hero</section>
     <section style="background-color: rgb(0, 255, 8); height: 972px;">News & Topics</section>
     <section style="background-color: rgb(104, 128, 128); height: 343px;">CTA_カタログ</section>
-    <section style="background-color: rgb(251, 251, 251); height: auto;">
+    <section style="background-color: rgb(251, 251, 251); height: auto;" id="02search">
         <div style="background-color: #dfa3a3; margin: 0 auto;">
-            <h2>Product</h2>
+            <h2>検索B</h2>
         </div>
         <div>
             <ul style="display: flex; flex-direction: row; width: 80%; align-content: center; justify-content: center; gap: 20px; margin: 0 auto;">

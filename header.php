@@ -22,7 +22,7 @@
             <nav class="header-nav c-flexcol">
                 <ul class="header-nav--first c-flexrow" style="gap: 20px;">
                     <li style="color:#fff!important;"><a href="<?php echo esc_url(home_url('/products01#01search')); ?>" style="color:#fff!important;">検索A</a></li>
-                    <li style="color:#fff!important;"><a href="<?php echo esc_url(home_url('/products02')); ?>" style="color:#fff!important;">検索B</a></li>
+                    <li style="color:#fff!important;"><a href="<?php echo esc_url(home_url('/products02#02search')); ?>" style="color:#fff!important;">検索B</a></li>
                     <li style="color:#fff!important;"><a href="<?php echo esc_url(home_url('/products03#03search')); ?>" style="color:#fff!important;">検索C</a></li>
                 </ul>
                 <ul class="header-nav--second c-flexrow" style="gap: 20px;">
