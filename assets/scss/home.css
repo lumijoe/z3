@@ -95,6 +95,7 @@ li, ol {
   font-weight: 100;
   padding-left: 5%;
   padding-bottom: 20px;
+  margin-top: -20px;
 }
 
 .l-topics {
@@ -150,7 +151,7 @@ li, ol {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  margin-left: 15px;
+  margin-left: 30px;
 }
 .l-news-label-txt {
   padding-top: 3px;
@@ -162,7 +163,7 @@ li, ol {
   height: fit-content;
   text-align: center;
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 43px;
 }
 .l-news-lists {
   margin-top: 15px;
