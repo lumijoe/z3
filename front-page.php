@@ -68,25 +68,88 @@ get_header();
         </div>
     </section>
     <section class="l-news">
-        <div class="l-news--area">
-            <div>
-                <h2 class="h2-ttl--main">News</h2>
-                <p class="h2-ttl--sub">ニュース</p>
+        <!-- STANDARD NEWS -->
+        <div>
+            <div class="l-news--area">
+                <div>
+                    <h2 class="h2-ttl--main">News</h2>
+                    <p class="h2-ttl--sub">ニュース</p>
+                </div>
+                <ul class="l-news-label">
+                    <li class="l-news-label-txt">すべて</li>
+                    <li class="l-news-label-txt">お知らせ</li>
+                    <li class="l-news-label-txt">展示会</li>
+                </ul>
             </div>
-            <ul class="l-news-label">
-                <li>すべて</li>
-                <li>お知らせ</li>
-                <li>展示会</li>
+            <ul class="l-news-lists">
+                <li>
+                    <p class="news-day">2024/00/00</p>
+                    <p class="l-news-label-txt">展示会</p>
+                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
+                </li>
+                <li>
+                    <p class="news-day">2024/00/00</p>
+                    <p class="l-news-label-txt">展示会</p>
+                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
+                </li>
+                <li>
+                    <p class="news-day">2024/00/00</p>
+                    <p class="l-news-label-txt">展示会</p>
+                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
+                </li>
+                <li>
+                    <p class="news-day">2024/00/00</p>
+                    <p class="l-news-label-txt">展示会</p>
+                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
+                </li>
+                <li>
+                    <p class="news-day">2024/00/00</p>
+                    <p class="l-news-label-txt">展示会</p>
+                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
+                </li>
             </ul>
+            <a href="<?php echo esc_url(home_url('/newslist-standard')); ?>" tabindex="0" class="btn--newsmore"><span style="font-style: italic;">NEWS</span>一覧へ</a>
         </div>
-        <div class="l-news--area">
-            <div>
-                <h2 class="h2-ttl--main">IR News</h2>
-                <p class="h2-ttl--sub">IRニュース</p>
+        <!-- IR NEWS -->
+        <div>
+            <div class="l-news--area">
+                <div>
+                    <h2 class="h2-ttl--main">IR News</h2>
+                    <p class="h2-ttl--sub">IRニュース</p>
+                </div>
+                <ul class="l-news-label">
+                    <li class="l-news-label-txt">IR情報</li>
+                </ul>
             </div>
-            <ul class="l-news-label">
-                <li>IR情報</li>
+            <ul class="l-news-lists">
+                <li>
+                    <p class="news-day">2024/00/00</p>
+                    <p class="l-news-label-txt">IR情報</p>
+                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
+                </li>
+                <li>
+                    <p class="news-day">2024/00/00</p>
+                    <p class="l-news-label-txt">IR情報</p>
+                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
+                </li>
+                <li>
+                    <p class="news-day">2024/00/00</p>
+                    <p class="l-news-label-txt">IR情報</p>
+                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
+                </li>
+                <li>
+                    <p class="news-day">2024/00/00</p>
+                    <p class="l-news-label-txt">IR情報</p>
+                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
+                </li>
+                <li>
+                    <p class="news-day">2024/00/00</p>
+                    <p class="l-news-label-txt">IR情報</p>
+                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
+                </li>
             </ul>
+            <a href="<?php echo esc_url(home_url('/newslist-ir')); ?>" tabindex="0" class="btn--newsmore"><span style="font-style: italic;">IR NEWS</span>一覧へ</a>
+
         </div>
     </section>
     <section style="background-color: rgb(48, 56, 56); height: 350px;">three-strong </section>

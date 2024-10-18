@@ -87,6 +87,7 @@ li, ol {
   padding-top: 20px;
   padding-left: 5%;
   font-style: italic;
+  display: ruby-text;
 }
 
 .h2-ttl--sub {
@@ -103,6 +104,7 @@ li, ol {
   margin: 0;
   overflow: hidden;
   padding-bottom: 40px;
+  padding-left: 5%;
 }
 .l-topics ul {
   gap: 20px;
@@ -131,25 +133,68 @@ li, ol {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   padding-left: 5%;
   padding-right: 5%;
-  gap: 10%;
+  padding-top: 20px;
+  gap: 5%;
+  align-items: flex-start;
 }
 .l-news--area {
   width: 30%;
-  display: flexbox;
+  display: flex;
   flex-direction: row;
+  align-items: flex-end;
 }
 .l-news-label {
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  gap: 10px;
+  margin-left: 15px;
 }
-.l-news-label li {
+.l-news-label-txt {
   padding-top: 3px;
   padding-bottom: 3px;
-  width: 60px;
+  width: 120px;
   background-color: bisque;
   border-radius: 4px;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.l-news-lists {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.l-news-lists li {
+  width: auto;
+  border-top: 0.7px solid #6a6a6a;
+  border-bottom: 0.7px solid #6a6a6a;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.5fr 0.8fr 1.5fr;
+  gap: 15px;
+  font-size: 14px;
+}
+.l-news-lists li .news-day {
+  font-size: 12px;
+}
+.l-news-lists li .l-news-text {
+  font-size: 14px;
+}
+.l-news .btn--newsmore {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 230px;
+  background-color: #232323;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin: 30px auto;
 }/*# sourceMappingURL=home.css.map */
