@@ -38,7 +38,7 @@ get_header();
                         <img src="./wp-content/uploads/assets/images/img_01.jpg" alt="" width="330" height="230">
 
                     </div>
-                    <p class="l-topics--title">テキストが入ります</p>
+                    <p class="l-topics--title">テキストが入りますテキストが入ります</p>
                 </li>
                 <li>
                     <div class="l-topics--img">
@@ -49,13 +49,13 @@ get_header();
                 <li>
                     <div class="l-topics--img">
                         <img src="./wp-content/uploads/assets/images/img_03.jpg" alt="" width="330" height="230">
-                        <p class="l-topics--title">テキストが入ります</p>
+                        <p class="l-topics--title">テキストが入りますお知らせです</p>
                     </div>
                 </li>
                 <li>
                     <div class="l-topics--img">
                         <img src="./wp-content/uploads/assets/images/img_04.jpg" alt="" width="330" height="230">
-                        <p class="l-topics--title">テキストが入ります</p>
+                        <p class="l-topics--title">テキストが入りますテキストのお知らせです</p>
                     </div>
                 </li>
                 <li>
@@ -69,7 +69,7 @@ get_header();
     </section>
     <section class="l-news">
         <!-- STANDARD NEWS -->
-        <div>
+        <div class=l-news-areawrapper>
             <div class="l-news--area">
                 <div>
                     <h2 class="h2-ttl--main">News</h2>
@@ -85,7 +85,12 @@ get_header();
                 <li>
                     <p class="news-day">2024/00/00</p>
                     <p class="l-news-label-txt">展示会</p>
-                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
+                    <p class="l-news-text">テキストが入ります</p>
+                </li>
+                <li>
+                    <p class="news-day">2024/00/00</p>
+                    <p class="l-news-label-txt">展示会</p>
+                    <p class="l-news-text">テキストが入りますテキストが入ります</p>
                 </li>
                 <li>
                     <p class="news-day">2024/00/00</p>
@@ -95,23 +100,18 @@ get_header();
                 <li>
                     <p class="news-day">2024/00/00</p>
                     <p class="l-news-label-txt">展示会</p>
-                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
+                    <p class="l-news-text">テキストが入ります</p>
                 </li>
                 <li>
                     <p class="news-day">2024/00/00</p>
                     <p class="l-news-label-txt">展示会</p>
-                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
-                </li>
-                <li>
-                    <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">展示会</p>
-                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
+                    <p class="l-news-text">テキストが入りますテキストが入ります</p>
                 </li>
             </ul>
             <a href="<?php echo esc_url(home_url('/newslist-standard')); ?>" tabindex="0" class="btn--newsmore"><span style="font-style: italic;">NEWS</span>一覧へ</a>
         </div>
         <!-- IR NEWS -->
-        <div>
+        <div class=l-news-areawrapper>
             <div class="l-news--area">
                 <div>
                     <h2 class="h2-ttl--main">IR News</h2>
@@ -125,7 +125,7 @@ get_header();
                 <li>
                     <p class="news-day">2024/00/00</p>
                     <p class="l-news-label-txt">IR情報</p>
-                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
+                    <p class="l-news-text">テキストが入りますテキストが入ります</p>
                 </li>
                 <li>
                     <p class="news-day">2024/00/00</p>
@@ -135,7 +135,7 @@ get_header();
                 <li>
                     <p class="news-day">2024/00/00</p>
                     <p class="l-news-label-txt">IR情報</p>
-                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
+                    <p class="l-news-text">テキストが入ります</p>
                 </li>
                 <li>
                     <p class="news-day">2024/00/00</p>
@@ -145,7 +145,7 @@ get_header();
                 <li>
                     <p class="news-day">2024/00/00</p>
                     <p class="l-news-label-txt">IR情報</p>
-                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
+                    <p class="l-news-text">テキストが入りますテキストが入ります</p>
                 </li>
             </ul>
             <a href="<?php echo esc_url(home_url('/newslist-ir')); ?>" tabindex="0" class="btn--newsmore"><span style="font-style: italic;">IR NEWS</span>一覧へ</a>
