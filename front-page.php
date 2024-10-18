@@ -68,19 +68,23 @@ get_header();
         </div>
     </section>
     <section class="l-news">
-        <h2 class="h2-ttl--main">News</h2>
-        <p class="h2-ttl--sub">ニュース</p>
-        <div class="">
-            <h2>OTHER</h2>
-            <ul>
+        <div class="l-news--area">
+            <div>
+                <h2 class="h2-ttl--main">News</h2>
+                <p class="h2-ttl--sub">ニュース</p>
+            </div>
+            <ul class="l-news-label">
                 <li>すべて</li>
                 <li>お知らせ</li>
                 <li>展示会</li>
             </ul>
         </div>
-        <div class="">
-            <h2>IR</h2>
-            <ul>
+        <div class="l-news--area">
+            <div>
+                <h2 class="h2-ttl--main">IR News</h2>
+                <p class="h2-ttl--sub">IRニュース</p>
+            </div>
+            <ul class="l-news-label">
                 <li>IR情報</li>
             </ul>
         </div>

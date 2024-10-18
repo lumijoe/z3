@@ -53,13 +53,14 @@
     font-size: 35px;
     padding-top: 20px;
     padding-left:5%;
-    padding-bottom: 10px;
+    
     font-style: italic;
 }
 .h2-ttl--sub {
     font-size: 12px;
     font-weight: 100;
     padding-left: 5%;
+    padding-bottom: 20px;
 }
 
 // l-topics
@@ -98,4 +99,27 @@
     background-color: aquamarine;
     height: auto;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 10%;
+    &--area {
+        width: 30%;
+        display: flexbox;
+        flex-direction: row;
+    }
+    &-label {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        li {
+            padding-top: 3px;
+            padding-bottom: 3px;
+            width: 60px;
+            background-color: bisque;
+            border-radius: 4px;
+        }
+    }
 }

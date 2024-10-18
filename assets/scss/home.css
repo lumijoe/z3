@@ -86,7 +86,6 @@ li, ol {
   font-size: 35px;
   padding-top: 20px;
   padding-left: 5%;
-  padding-bottom: 10px;
   font-style: italic;
 }
 
@@ -94,6 +93,7 @@ li, ol {
   font-size: 12px;
   font-weight: 100;
   padding-left: 5%;
+  padding-bottom: 20px;
 }
 
 .l-topics {
@@ -129,4 +129,27 @@ li, ol {
   background-color: aquamarine;
   height: auto;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  gap: 10%;
+}
+.l-news--area {
+  width: 30%;
+  display: flexbox;
+  flex-direction: row;
+}
+.l-news-label {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.l-news-label li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 60px;
+  background-color: bisque;
+  border-radius: 4px;
 }/*# sourceMappingURL=home.css.map */
