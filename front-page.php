@@ -29,7 +29,8 @@ get_header();
 
     </section>
     <section class="l-topics">
-        <h2>Topics</h2>
+        <h2 class="h2-ttl--main">Topics</h2>
+        <p class="h2-ttl--sub">トピックス</p>
         <div class="l-swiper">
             <ul>
                 <li>
@@ -67,7 +68,9 @@ get_header();
         </div>
     </section>
     <section class="l-news">
-        <div class="l-news-other">
+        <h2 class="h2-ttl--main">News</h2>
+        <p class="h2-ttl--sub">ニュース</p>
+        <div class="">
             <h2>OTHER</h2>
             <ul>
                 <li>すべて</li>
@@ -75,7 +78,7 @@ get_header();
                 <li>展示会</li>
             </ul>
         </div>
-        <div class="l-news-ir">
+        <div class="">
             <h2>IR</h2>
             <ul>
                 <li>IR情報</li>
