@@ -14,9 +14,9 @@ get_header('product');
     <section style="background-color: aqua; height: 214px;">hero</section>
     <section style="background-color: rgb(0, 255, 8); height: 972px;">News & Topics</section>
     <section style="background-color: rgb(104, 128, 128); height: 343px;">CTA_カタログ</section>
-    <section style="background-color: rgb(251, 251, 251); height: auto;">
+    <section style="background-color: rgb(251, 251, 251); height: auto;" id="01search">
         <div style="background-color: #dfa3a3; margin: 0 auto;">
-            <h2>Product</h2>
+            <h2>検索A</h2>
         </div>
         <div>
             <ul style="display: flex; flex-direction: row; width: 80%; align-content: center; justify-content: center; gap: 20px; margin: 0 auto;">
@@ -44,75 +44,75 @@ get_header('product');
             <!-- 初期状態で全ての商品を表示 -->
             <ul id="all-products" class="product-list active">
                 <div style="background-color: #dfa3a3; height:fit-content;" class="category"><span style="background-color: #232323; color: #fff!important; display: block; margin-left: -10px; margin-right: -10px; margin-top: -10px; padding-left: 5px;">カテゴリA</span>
-                    <li><a href="./page-p01-productname.html" tabindex="0">商品001</a></li>
-                    <li><a href="./page-p01-productname.html" tabindex="0">商品002</a></li>
-                    <li><a href="./page-p01-productname.html" tabindex="0">商品003</a></li>
-                    <li><a href="./page-p01-productname.html" tabindex="0">商品004</a></li>
-                    <li><a href="./page-p01-productname.html" tabindex="0">商品005</a></li>
-                    <li><a href="./page-p01-productname.html" tabindex="0">商品006</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品001</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品002</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品003</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品004</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品005</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品006</a></li>
                 </div>
                 <div style="background-color: #dfa3a3; height:fit-content;" class="category"><span style="background-color: #232323; color: #fff!important; display: block; margin-left: -10px; margin-right: -10px; margin-top: -10px; padding-left: 5px;">カテゴリB</span>
-                    <li><a href="./page-p01-productname.html" tabindex="0">商品007</a></li>
-                    <li><a href="./page-p01-productname.html" tabindex="0">商品008</a></li>
-                    <li><a href="./page-p01-productname.html" tabindex="0">商品009</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品007</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品008</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品009</a></li>
                 </div>
                 <div style="background-color: #dfa3a3; height:fit-content;" class="category"><span style="background-color: #232323; color: #fff!important; display: block; margin-left: -10px; margin-right: -10px; margin-top: -10px; padding-left: 5px;">カテゴリC</span>
-                    <li><a href="./page-p01-productname.html" tabindex="0">商品010</a></li>
-                    <li><a href="./page-p01-productname.html" tabindex="0">商品011</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品010</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品011</a></li>
                 </div>
                 <div style="background-color: #dfa3a3; height:fit-content;" class="category"><span style="background-color: #232323; color: #fff!important; display: block; margin-left: -10px; margin-right: -10px; margin-top: -10px; padding-left: 5px;">カテゴリD</span>
-                    <li style="background-color: aquamarine;"><a href="./page-p01-productname.html" tabindex="0">商品012処理</a></li>
-                    <li><a href="./page-p01-productname.html" tabindex="0">商品013</a></li>
-                    <li><a href="./page-p01-productname.html" tabindex="0">商品014</a></li>
-                    <li style="background-color: aquamarine;"><a href="./page-p01-productname.html" tabindex="0">商品015処理</a></li>
-                    <li><a href="./page-p01-productname.html" tabindex="0">商品016</a></li>
-                    <li><a href="./page-p01-productname.html" tabindex="0">商品017</a></li>
-                    <li><a href="./page-p01-productname.html" tabindex="0">商品018</a></li>
-                    <li><a href="./page-p01-productname.html" tabindex="0">商品019</a></li>
+                    <li style="background-color: aquamarine;"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品012処理</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品013</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品014</a></li>
+                    <li style="background-color: aquamarine;"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品015処理</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品016</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品017</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品018</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品019</a></li>
                 </div>
                 <div style="background-color: #dfa3a3; height:fit-content;" class="category"><span style="background-color: #232323; color: #fff!important; display: block; margin-left: -10px; margin-right: -10px; margin-top: -10px; padding-left: 5px;">カテゴリE</span>
-                    <li style="background-color: rgb(234, 255, 127);"><a href="./page-p01-productname.html" tabindex="0">商品020用途</a></li>
-                    <li style="background-color: rgb(234, 255, 127);"><a href="./page-p01-productname.html" tabindex="0">商品021用途</a></li>
+                    <li style="background-color: rgb(234, 255, 127);"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品020用途</a></li>
+                    <li style="background-color: rgb(234, 255, 127);"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品021用途</a></li>
                 </div>
                 <div style="background-color: #dfa3a3; height:fit-content;" class="category"><span style="background-color: #232323; color: #fff!important; display: block; margin-left: -10px; margin-right: -10px; margin-top: -10px; padding-left: 5px;">カテゴリF</span>
-                    <li><a href="./page-p01-productname.html" tabindex="0">商品022</a></li>
-                    <li style="background-color: rgb(234, 255, 127);"><a href="./page-p01-productname.html" tabindex="0">商品023用途</a></li>
-                    <li style="background-color: aquamarine;"><a href="./page-p01-productname.html" tabindex="0">商品024処理</a></li>
-                    <li style="background-color: aquamarine;"><a href="./page-p01-productname.html" tabindex="0">商品025処理</a></li>
-                    <li style="background-color: rgb(234, 255, 127);"><a href="./page-p01-productname.html" tabindex="0">商品026用途</a></li>
-                    <li style="background-color: rgb(234, 255, 127);"><a href="./page-p01-productname.html" tabindex="0">商品027用途</a></li>
-                    <li style="background-color: rgb(234, 255, 127);"><a href="./page-p01-productname.html" tabindex="0">商品028用途</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品022</a></li>
+                    <li style="background-color: rgb(234, 255, 127);"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品023用途</a></li>
+                    <li style="background-color: aquamarine;"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品024処理</a></li>
+                    <li style="background-color: aquamarine;"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品025処理</a></li>
+                    <li style="background-color: rgb(234, 255, 127);"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品026用途</a></li>
+                    <li style="background-color: rgb(234, 255, 127);"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品027用途</a></li>
+                    <li style="background-color: rgb(234, 255, 127);"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品028用途</a></li>
                 </div>
             </ul>
 
 
             <!-- 処理材料リスト -->
             <ul id="material-products" class="product-list">
-                <li style="background-color: aquamarine;"><a href="./page-p01-productname.html" tabindex="0">商品012処理</a></li>
-                <li style="background-color: aquamarine;"><a href="./page-p01-productname.html" tabindex="0">商品015処理</a></li>
-                <li style="background-color: aquamarine;"><a href="./page-p01-productname.html" tabindex="0">商品024処理</a></li>
-                <li style="background-color: aquamarine;"><a href="./page-p01-productname.html" tabindex="0">商品025処理</a></li>
+                <li style="background-color: aquamarine;"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品012処理</a></li>
+                <li style="background-color: aquamarine;"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品015処理</a></li>
+                <li style="background-color: aquamarine;"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品024処理</a></li>
+                <li style="background-color: aquamarine;"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品025処理</a></li>
             </ul>
 
             <!-- 用途リスト -->
             <ul id="purpose-products" class="product-list">
-                <li style="background-color: rgb(234, 255, 127);"><a href="./page-p01-productname.html" tabindex="0">商品020用途</a>
+                <li style="background-color: rgb(234, 255, 127);"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品020用途</a>
                 </li>
-                <li style="background-color: rgb(234, 255, 127);"><a href="./page-p01-productname.html" tabindex="0">商品021用途</a>
+                <li style="background-color: rgb(234, 255, 127);"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品021用途</a>
                 </li>
-                <li style="background-color: rgb(234, 255, 127);"><a href="./page-p01-productname.html" tabindex="0">商品023用途</a>
+                <li style="background-color: rgb(234, 255, 127);"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品023用途</a>
                 </li>
-                <li style="background-color: rgb(234, 255, 127);"><a href="./page-p01-productname.html" tabindex="0">商品026用途</a>
+                <li style="background-color: rgb(234, 255, 127);"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品026用途</a>
                 </li>
-                <li style="background-color: rgb(234, 255, 127);"><a href="./page-p01-productname.html" tabindex="0">商品027用途</a>
+                <li style="background-color: rgb(234, 255, 127);"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品027用途</a>
                 </li>
-                <li style="background-color: rgb(234, 255, 127);"><a href="./page-p01-productname.html" tabindex="0">商品028用途</a>
+                <li style="background-color: rgb(234, 255, 127);"><a href="<?php echo esc_url(home_url('/p01-001')); ?>" tabindex="0">商品028用途</a>
                 </li>
             </ul>
         </div>
     </section>
     <!-- WPテスト -->
-    <section>
+    <!-- <section style="margin-top: 200px;">
         <h1>WP ACF投稿タクソノミー別UIテスト</h1>
         <?php
         // 投稿タイプを指定（例: 'post'）し、全ての投稿を取得
@@ -152,7 +152,7 @@ get_header('product');
         // 投稿データのリセット
         wp_reset_postdata();
         ?>
-    </section>
+    </section> -->
 
     <section style="background-color: rgb(157, 179, 179); height: 314px;">CTA_ダウンロード & 問い合わせ</section>
     <!-- footer -->
