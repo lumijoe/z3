@@ -1,7 +1,10 @@
 @charset "UTF-8";
 @use "./common/reset";
 @use "./layout/header";
+@use "./layout/section";
 @use "./common/layout";
+@use "./common/typo";
+@use "./common/icon";
 
 // l-hero
 .l-hero {
