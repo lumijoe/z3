@@ -149,6 +149,23 @@ a {
   font-size: 10px;
 }
 
+.c-tab-contents {
+  font-size: 10px;
+  padding: 3px 8px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.l-news-wrapper ul {
+  gap: 5px;
+}
+.l-news-wrapper ul li {
+  font-size: 10px;
+  padding: 3px 8px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
 .c-endicon-arrow--s::after {
   content: "";
   display: inline-block;
