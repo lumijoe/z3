@@ -304,3 +304,4 @@ item.setAttribute('tabindex', '0');
 ## 10/28Figmaのセクションやh2などの余白をSCSSで初期設定しておきfigmaDevモードの活用に繋げること
 
 
+
