@@ -31,8 +31,8 @@
    <main>
     <div class="l-breadcrumbs c-pdlr--wide">
         <ul>
-            <li><a href="/" target="_blank" rel="noopener noreferrer">TOP</a></li>
-            <li><a href="/sus" target="_blank" rel="noopener noreferrer">ニュースルーム</a></li>
+            <li><a href="/">TOP</a></li>
+            <li><a href="./newslist-standard.html">ニュースルーム</a></li>
         </ul>
     </div>
     <div class="l-title--page c-pdlr--wide">
@@ -68,8 +68,8 @@
                             <li>サステナビリティ</li>
                         </ul>
                     </div>
-                    <div class="l-news-wrapper--xt-second">
-                        <p>環境WEEK2024の出展が終了しました<span>PDF</span></p>
+                    <div class="l-news-wrapper--txt-second">
+                        <p class="textoverm">環境WEEK2024の出展が終了しました<span>PDF</span></p>
                     </div>
                 </div>
             </li>
@@ -83,8 +83,8 @@
                             <li>サステナビリティ</li>
                         </ul>
                     </div>
-                    <div class="l-news-wrapper--xt-second">
-                        <p>環境WEEK2024の出展が終了しました<span>PDF</span></p>
+                    <div class="l-news-wrapper--txt-second">
+                        <p class="textoverm">環境WEEK2024の出展が終了しました<span>PDF</span></p>
                     </div>
                 </div>
             </li>
@@ -98,8 +98,8 @@
                             <li>サステナビリティ</li>
                         </ul>
                     </div>
-                    <div class="l-news-wrapper--xt-second">
-                        <p>環境WEEK2024の出展が終了しました<span>PDF</span></p>
+                    <div class="l-news-wrapper--txt-second">
+                        <p class="textoverm">環境WEEK2024の出展が終了しました<span>PDF</span></p>
                     </div>
                 </div>
             </li>
@@ -113,8 +113,8 @@
                             <li>サステナビリティ</li>
                         </ul>
                     </div>
-                    <div class="l-news-wrapper--xt-second">
-                        <p>環境WEEK2024の出展が終了しました<span>PDF</span></p>
+                    <div class="l-news-wrapper--txt-second">
+                        <p class="textoverm">環境WEEK2024の出展が終了しました<span>PDF</span></p>
                     </div>
                 </div>
             </li>
@@ -128,8 +128,8 @@
                             <li>サステナビリティ</li>
                         </ul>
                     </div>
-                    <div class="l-news-wrapper--xt-second">
-                        <p>環境WEEK2024の出展が終了しました<span>PDF</span></p>
+                    <div class="l-news-wrapper--txt-second">
+                        <p class="textoverm">環境WEEK2024の出展が終了しました<span>PDF</span></p>
                     </div>
                 </div>
             </li>
@@ -143,8 +143,8 @@
                             <li>サステナビリティ</li>
                         </ul>
                     </div>
-                    <div class="l-news-wrapper--xt-second">
-                        <p>環境WEEK2024の出展が終了しました<span>PDF</span></p>
+                    <div class="l-news-wrapper--txt-second">
+                        <p class="textoverm">環境WEEK2024の出展が終了しました環境WEEK2024の出展が終了しました環境WEEK2024の出展が終了しました<span>PDF</span></p>
                     </div>
                 </div>
             </li>
@@ -160,5 +160,15 @@
         <section style="background-color: rgb(255, 249, 127); height: 120px;">footer-second</section>
    </footer>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+   <script>
+    const maxLength = 30;
+    const textOverM = document.querySelectorAll('.textoverm');
+    textOverM.forEach((element) => {
+      if (element.textContent.length > maxLength) {
+        element.textContent = element.textContent.slice(0, maxLength) + '...';
+      }
+    });
+  </script>
+
 </body>
 </html>
