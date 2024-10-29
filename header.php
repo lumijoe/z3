@@ -26,9 +26,9 @@
                     <li style="color:#fff!important;"><a href="<?php echo esc_url(home_url('/products03#03search')); ?>" style="color:#fff!important;">検索C</a></li>
                 </ul>
                 <ul class="header-nav--second c-flexrow" style="gap: 20px;">
-                    <li style="color:#fff;">4</li>
-                    <li style="color:#fff;">5</li>
-                    <li style="color:#fff;">6</li>
+                    <li style="color:#fff;"><a href="<?php echo esc_url(home_url('/newslist-standard')); ?>" style="color:#fff!important;">ニュースルーム</a></li>
+                    <li style="color:#fff;"><a href="<?php echo esc_url(home_url('/newslist-sustainability')); ?>" style="color:#fff!important;">サステナビリティニュース</a></li>
+                    <li style="color:#fff;"><a href="<?php echo esc_url(home_url('/newslist-ir')); ?>" style="color:#fff!important;">IRニュース</a></li>
                 </ul>
             </nav>
         </section>

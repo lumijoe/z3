@@ -140,8 +140,7 @@ p {
             border-radius: 4px;
             height: fit-content;
             text-align: center;
-            font-size: 14px;
-            margin-bottom: 43px;
+            font-size: 12px;
         }
     }
     &-lists {
@@ -158,11 +157,12 @@ p {
             grid-template-columns: 0.5fr 0.8fr 1.5fr;
             gap: 15px;
             font-size: 14px;
+            height: 60px;
             .news-day {
                 font-size: 12px;
             }
             .l-news-text {
-                font-size: 14px;
+                font-size: 12px;
             }
         }
     }

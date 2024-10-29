@@ -26,10 +26,9 @@ get_header('product');
     <div>
         <ul>
             <li>すべて</li>
-            <li>プレスリリース</li>
             <li>展示会</li>
             <li>お知らせ</li>
-            <li>研究・技術</li>
+            <li>研究開発・技術録</li>
             <li>サステナビリティ</li>
         </ul>
         <a href="<?php echo esc_url(home_url('/newslist-ir')); ?>" class="c-txt--s c-position--right c-endicon-arrow--s">IRニュースはこちら</a>
@@ -48,7 +47,7 @@ get_header('product');
                     </ul>
                 </div>
                 <div class="l-news-wrapper--txt-second">
-                    <p class="textoverm">環境WEEK2024の出展が終了しました<span>PDF</span></p>
+                    <p class="textoverm">〇〇のお知らせ<span>PDF：35.7KB</span></p>
                 </div>
             </div>
         </li>
@@ -63,7 +62,7 @@ get_header('product');
                     </ul>
                 </div>
                 <div class="l-news-wrapper--txt-second">
-                    <p class="textoverm">環境WEEK2024の出展が終了しました<span>PDF</span></p>
+                    <p class="textoverm">環境WEEK2024の出展が終了しました</p>
                 </div>
             </div>
         </li>
@@ -73,13 +72,11 @@ get_header('product');
                 <div class="l-news-wrapper--txt-first">
                     <p class="c-news-date">2024/09/06</p>
                     <ul>
-                        <li>研究・技術</li>
-                        <li>プレスリリース</li>
-                        <li>展示会</li>
+                        <li>研究開発・技術録</li>
                     </ul>
                 </div>
                 <div class="l-news-wrapper--txt-second">
-                    <p class="textoverm">環境WEEK2024の出展が終了しました<span>PDF</span></p>
+                    <p class="textoverm">サーモテックニュースvol.14<span>PDF：35.7KB</span></p>
                 </div>
             </div>
         </li>
@@ -94,7 +91,7 @@ get_header('product');
                     </ul>
                 </div>
                 <div class="l-news-wrapper--txt-second">
-                    <p class="textoverm">環境WEEK2024の出展が終了しました<span>PDF</span></p>
+                    <p class="textoverm">環境WEEK2024の出展が終了しました</p>
                 </div>
             </div>
         </li>
@@ -104,12 +101,11 @@ get_header('product');
                 <div class="l-news-wrapper--txt-first">
                     <p class="c-news-date">2024/09/06</p>
                     <ul>
-                        <li>展示会</li>
-                        <li>研究・技術</li>
+                        <li>研究開発・技術録</li>
                     </ul>
                 </div>
                 <div class="l-news-wrapper--txt-second">
-                    <p class="textoverm">環境WEEK2024の出展が終了しました<span>PDF</span></p>
+                    <p class="textoverm">中外技録「アンモニアバーナの〇〇〇〇について」<span>PDF：35.7KB</span></p>
                 </div>
             </div>
         </li>
@@ -120,11 +116,11 @@ get_header('product');
                     <p class="c-news-date">2024/09/06</p>
                     <ul>
                         <li>サステナビリティ</li>
-                        <li>プレスリリース</li>
+                        <li>展示会</li>
                     </ul>
                 </div>
                 <div class="l-news-wrapper--txt-second">
-                    <p class="textoverm">環境WEEK2024の出展が終了しました環境WEEK2024の出展が終了しました環境WEEK2024の出展が終了しました<span>PDF</span></p>
+                    <p class="textoverm">環境WEEK2024の出展が終了しました環境WEEK2024の出展が終了しました環境WEEK2024の出展が終了しました</p>
                 </div>
             </div>
         </li>

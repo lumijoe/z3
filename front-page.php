@@ -75,11 +75,6 @@ get_header();
                     <h2 class="h2-ttl--main">News</h2>
                     <p class="h2-ttl--sub">ニュース</p>
                 </div>
-                <ul class="l-news-label">
-                    <li class="l-news-label-txt">すべて</li>
-                    <li class="l-news-label-txt">お知らせ</li>
-                    <li class="l-news-label-txt">展示会</li>
-                </ul>
             </div>
             <ul class="l-news-lists">
                 <li>
@@ -89,22 +84,22 @@ get_header();
                 </li>
                 <li>
                     <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">展示会</p>
+                    <p class="l-news-label-txt">サステナビリティ</p>
                     <p class="l-news-text">テキストが入りますテキストが入ります</p>
                 </li>
                 <li>
                     <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">展示会</p>
+                    <p class="l-news-label-txt">お知らせ</p>
                     <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
                 </li>
                 <li>
                     <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">展示会</p>
+                    <p class="l-news-label-txt">研究開発・技術録</p>
                     <p class="l-news-text">テキストが入ります</p>
                 </li>
                 <li>
                     <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">展示会</p>
+                    <p class="l-news-label-txt">お知らせ</p>
                     <p class="l-news-text">テキストが入りますテキストが入ります</p>
                 </li>
             </ul>
@@ -117,34 +112,31 @@ get_header();
                     <h2 class="h2-ttl--main">IR News</h2>
                     <p class="h2-ttl--sub">IRニュース</p>
                 </div>
-                <ul class="l-news-label">
-                    <li class="l-news-label-txt">IR情報</li>
-                </ul>
             </div>
             <ul class="l-news-lists">
                 <li>
                     <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">IR情報</p>
+                    <p class="l-news-label-txt">IR</p>
                     <p class="l-news-text">テキストが入りますテキストが入ります</p>
                 </li>
                 <li>
                     <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">IR情報</p>
+                    <p class="l-news-label-txt">IR</p>
                     <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
                 </li>
                 <li>
                     <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">IR情報</p>
+                    <p class="l-news-label-txt">IR</p>
                     <p class="l-news-text">テキストが入ります</p>
                 </li>
                 <li>
                     <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">IR情報</p>
+                    <p class="l-news-label-txt">IR</p>
                     <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
                 </li>
                 <li>
                     <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">IR情報</p>
+                    <p class="l-news-label-txt">IR</p>
                     <p class="l-news-text">テキストが入りますテキストが入ります</p>
                 </li>
             </ul>
