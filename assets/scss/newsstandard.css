@@ -38,6 +38,7 @@
 .l-newslist .l-news-wrapper--txt-first {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .l-newslist .l-news-wrapper--txt-first ul {
   display: flex;
@@ -45,4 +46,5 @@
 }
 .l-newslist .l-news-wrapper--txt-second {
   display: flex;
+  align-items: center;
 }/*# sourceMappingURL=newsstandard.css.map */
