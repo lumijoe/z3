@@ -38,7 +38,7 @@ get_header('product');
 <section class="l-newslist">
     <ul>
         <li class="l-news-wrapper">
-            <img src="./assets/images/img_01.jpg" alt="">
+            <img src="../wp-content/uploads/assets/images/img_01.jpg" alt="">
             <div class="l-news-wrapper--txt">
                 <div class="l-news-wrapper--txt-first">
                     <p class="c-news-date">2024/09/06</p>
@@ -53,7 +53,7 @@ get_header('product');
             </div>
         </li>
         <li class="l-news-wrapper">
-            <img src="./assets/images/img_02.jpg" alt="">
+            <img src="../wp-content/uploads/assets/images/img_02.jpg" alt="">
             <div class="l-news-wrapper--txt">
                 <div class="l-news-wrapper--txt-first">
                     <p class="c-news-date">2024/09/06</p>
@@ -68,7 +68,7 @@ get_header('product');
             </div>
         </li>
         <li class="l-news-wrapper">
-            <img src="./assets/images/img_03.jpg" alt="">
+            <img src="../wp-content/uploads/assets/images/img_03.jpg" alt="">
             <div class="l-news-wrapper--txt">
                 <div class="l-news-wrapper--txt-first">
                     <p class="c-news-date">2024/09/06</p>
@@ -84,7 +84,7 @@ get_header('product');
             </div>
         </li>
         <li class="l-news-wrapper">
-            <img src="./assets/images/img_04.jpg" alt="">
+            <img src="../wp-content/uploads/assets/images/img_04.jpg" alt="">
             <div class="l-news-wrapper--txt">
                 <div class="l-news-wrapper--txt-first">
                     <p class="c-news-date">2024/09/06</p>
@@ -99,7 +99,7 @@ get_header('product');
             </div>
         </li>
         <li class="l-news-wrapper">
-            <img src="./assets/images/img_05.jpg" alt="">
+            <img src="../wp-content/uploads/assets/images/img_05.jpg" alt="">
             <div class="l-news-wrapper--txt">
                 <div class="l-news-wrapper--txt-first">
                     <p class="c-news-date">2024/09/06</p>
@@ -114,7 +114,7 @@ get_header('product');
             </div>
         </li>
         <li class="l-news-wrapper">
-            <img src="./assets/images/img_06.jpg" alt="">
+            <img src="../wp-content/uploads/assets/images/img_06.jpg" alt="">
             <div class="l-news-wrapper--txt">
                 <div class="l-news-wrapper--txt-first">
                     <p class="c-news-date">2024/09/06</p>
