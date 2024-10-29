@@ -10,8 +10,8 @@ get_header('product');
 ?>
 <div class="l-breadcrumbs c-pdlr--wide">
     <ul>
-        <li><a href="/">TOP</a></li>
-        <li><a href="./newslist-standard.html">ニュースルーム</a></li>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>">TOP</a></li>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>">ニュースルーム</a></li>
     </ul>
 </div>
 <div class="l-title--page c-pdlr--wide">
@@ -32,7 +32,7 @@ get_header('product');
             <li>研究・技術</li>
             <li>サステナビリティ</li>
         </ul>
-        <a href="./newslist-ir.html" class="c-txt--s c-position--right c-endicon-arrow--s">IRニュースはこちら</a>
+        <a href="<?php echo esc_url(home_url('/newslist-ir')); ?>" class="c-txt--s c-position--right c-endicon-arrow--s">IRニュースはこちら</a>
     </div>
 </section>
 <section class="l-newslist">
