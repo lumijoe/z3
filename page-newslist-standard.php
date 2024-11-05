@@ -144,6 +144,15 @@ get_header('product');
                         'post_type' => 'post_news',
                         'post_status' => 'publish',
                         'posts_per_page' => -1,
+                        'tax_query' => array( // タクソノミーによるフィルタリング
+                        'relation' => 'AND', // すべての条件に一致する投稿を取得
+                            array(
+                                'taxonomy' => 'newstype', // タクソノミー名
+                                'field' => 'slug', // スラッグで指定
+                                'terms' => array('typestandard', 'typesustainability'), // 表示するターム
+                                'operator' => 'IN', // 指定されたタームに一致する投稿のみ取得
+                            ),
+                        ),
                     );
 
                     $the_query = new WP_Query($args);
