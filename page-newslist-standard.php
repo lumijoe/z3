@@ -184,13 +184,14 @@ get_header('product');
                                             $taxonomies = ['tagexhibition', 'tagnews', 'tagtech', 'tagsustainability'];
                                             foreach ($taxonomies as $taxonomy) {
                                                 $terms = get_the_terms($post->ID, $taxonomy);
-                                                if ($terms) :
+                                                // タクソノミーが存在し、用語が取得できた場合
+                                                if ($terms && !is_wp_error($terms)) :
                                             ?>
-                                                    <ul class="" style="display: flex;  flex-direction: row; gap:5px; flex-wrap: wrap;">
+                                                    <ul style="display: flex; flex-direction: row; gap: 5px; flex-wrap: wrap; padding: 0;">
                                                         <?php
                                                         foreach ($terms as $term) :
                                                         ?>
-                                                            <li style="padding: 2px 8px; border-radius: 10px; border: 1px solid #232323; width: max-content; font-size:12px;">
+                                                            <li style="padding: 2px 8px; border-radius: 10px; border: 1px solid #232323; width: max-content; font-size: 12px;">
                                                                 <?php echo esc_html($term->name); ?>
                                                             </li>
                                                         <?php
