@@ -62,10 +62,10 @@ get_header('product');
                         <div class="l-news-wrapper--txt">
                             <div class="l-news-wrapper--txt-first">
                                 <!-- リンク -->
-                                <a href="<?php the_permalink(); ?>">
+                                <a href="<?php echo esc_url(get_permalink()); ?>">
                                     <!-- 日時 -->
-                                    <time class="c-news-date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
-                                        <?php echo get_the_date('Y/m/d'); ?>
+                                    <time class="c-news-date" datetime="<?php echo esc_attr(get_the_date('Y-m-d')); ?>">
+                                        <?php echo esc_html(get_the_date('Y/m/d')); ?>
                                     </time>
 
                                     <!-- タクソノミー -->

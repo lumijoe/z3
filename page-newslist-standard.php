@@ -63,13 +63,14 @@ get_header('product');
             while ($the_query->have_posts()) : $the_query->the_post();
         ?>
                 <li class="l-news-wrapper">
-                    <img src="../wp-content/uploads/assets/images/img_01.jpg" alt="">
+                    <!-- 画像のエスケープ処理 -->
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/img_01.jpg'); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
                     <div class="l-news-wrapper--txt">
                         <div class="l-news-wrapper--txt-first">
 
-                            <!-- 日時 -->
-                            <time class="c-news-date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
-                                <?php echo get_the_date('Y/m/d'); ?>
+                            <!-- 日時のエスケープ処理 -->
+                            <time class="c-news-date" datetime="<?php echo esc_attr(get_the_date('Y-m-d')); ?>">
+                                <?php echo esc_html(get_the_date('Y/m/d')); ?>
                             </time>
                             <!-- タクソノミー -->
                             <ul class="news-taxonomies" style="display: flex; flex-direction: row; gap:5px; flex-wrap: wrap;">
@@ -90,7 +91,7 @@ get_header('product');
                                 ?>
                             </ul>
                         </div>
-                        <!-- ニュースタイトル -->
+                        <!-- ニュースタイトルのエスケープ処理 -->
                         <p class="c-pdl--s">
                             <?php
                             $news_title = get_field('news_title');
@@ -100,11 +101,10 @@ get_header('product');
                             ?>
                         </p>
                         <!-- リンク -->
-                        <a href="<?php the_permalink(); ?>">
+                        <a href="<?php echo esc_url(get_permalink()); ?>">
                             <div class="l-news-wrapper--txt-second">
                                 <p class="textoverm">
                                     <?php
-                                    $news_title = get_field('news_title');
                                     if ($news_title) :
                                         echo esc_html($news_title);
                                     endif;

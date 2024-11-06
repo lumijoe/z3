@@ -106,12 +106,11 @@ get_header();
                         <li>
                             <!-- 日時 -->
                             <p class="news-day">
-                                <time class="c-news-date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
-                                    <?php echo get_the_date('Y/m/d'); ?>
+                                <time class="c-news-date" datetime="<?php echo esc_attr(get_the_date('Y-m-d')); ?>">
+                                    <?php echo esc_html(get_the_date('Y/m/d')); ?>
                                 </time>
                             </p>
                             <!-- タクソノミー -->
-                            <!-- <p class="l-news-label-txt">展示会</p> -->
                             <ul class="news-taxonomies" style="display: flex; flex-direction: row; gap:5px; flex-wrap: wrap;">
                                 <?php
                                 $taxonomies = ['newstag'];
@@ -130,7 +129,6 @@ get_header();
                                 ?>
                             </ul>
                             <!-- ニュースタイトル -->
-                            <!-- <p class="l-news-text">テキストが入ります</p> -->
                             <p class="c-pdl--s">
                                 <?php
                                 $news_title = get_field('news_title');
@@ -196,12 +194,11 @@ get_header();
                         <li>
                             <!-- 日時 -->
                             <p class="news-day">
-                                <time class="c-news-date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
-                                    <?php echo get_the_date('Y/m/d'); ?>
+                                <time class="c-news-date" datetime="<?php echo esc_attr(get_the_date('Y-m-d')); ?>">
+                                    <?php echo esc_html(get_the_date('Y/m/d')); ?>
                                 </time>
                             </p>
                             <!-- タクソノミー -->
-                            <!-- <p class="l-news-label-txt">展示会</p> -->
                             <ul class="news-taxonomies" style="display: flex; flex-direction: row; gap:5px; flex-wrap: wrap;">
                                 <?php
                                 $taxonomies = ['newstag'];
@@ -220,7 +217,6 @@ get_header();
                                 ?>
                             </ul>
                             <!-- ニュースタイトル -->
-                            <!-- <p class="l-news-text">テキストが入ります</p> -->
                             <p class="c-pdl--s">
                                 <?php
                                 $news_title = get_field('news_title');
