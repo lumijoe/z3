@@ -77,12 +77,75 @@ get_header();
                 </div>
             </div>
             <ul class="l-news-lists">
-                <li>
-                    <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">展示会</p>
-                    <p class="l-news-text">テキストが入ります</p>
-                </li>
-                <li>
+                <!-- ▽組み込み -->
+                <?php
+                $args = array(
+                    'post_type' => 'post_news',
+                    'post_status' => 'publish',
+                    'posts_per_page' => 5,
+                    'tax_query' => array(
+                        'relation' => 'AND', // すべての条件に一致する投稿を取得
+                        array(
+                            'taxonomy' => 'newstype', // タクソノミー名
+                            'field' => 'slug', // スラッグで指定
+                            'terms' => array('typestandard', 'typesustainability'), // 表示するターム
+                            'operator' => 'IN',
+                        ),
+                        array(
+                            'taxonomy' => 'newstag', // 別のタクソノミー名
+                            'field' => 'slug',
+                            'terms' => array('tagnews', 'tagsustainability', 'tagexhibition', 'tagtech'), // 表示するターム（必要に応じて変更）
+                            'operator' => 'IN',
+                        ),
+                    ),
+                );
+                $the_query = new WP_Query($args);
+                if ($the_query->have_posts()) :
+                    while ($the_query->have_posts()) : $the_query->the_post();
+                ?>
+                        <li>
+                            <!-- 日時 -->
+                            <p class="news-day">
+                                <time class="c-news-date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
+                                    <?php echo get_the_date('Y/m/d'); ?>
+                                </time>
+                            </p>
+                            <!-- タクソノミー -->
+                            <!-- <p class="l-news-label-txt">展示会</p> -->
+                            <ul class="news-taxonomies" style="display: flex; flex-direction: row; gap:5px; flex-wrap: wrap;">
+                                <?php
+                                $taxonomies = ['newstag'];
+                                foreach ($taxonomies as $taxonomy) {
+                                    $terms = get_the_terms($post->ID, $taxonomy);
+                                    if ($terms) :
+                                        foreach ($terms as $term) :
+                                ?>
+                                            <li class="tax-term">
+                                                <?php echo esc_html($term->name); ?>
+                                            </li>
+                                <?php
+                                        endforeach;
+                                    endif;
+                                }
+                                ?>
+                            </ul>
+                            <!-- ニュースタイトル -->
+                            <!-- <p class="l-news-text">テキストが入ります</p> -->
+                            <p class="c-pdl--s">
+                                <?php
+                                $news_title = get_field('news_title');
+                                if ($news_title) :
+                                    echo esc_html($news_title);
+                                endif;
+                                ?>
+                            </p>
+                        </li>
+                <?php
+                    endwhile;
+                    wp_reset_postdata();
+                endif;
+                ?>
+                <!-- <li>
                     <p class="news-day">2024/00/00</p>
                     <p class="l-news-label-txt">サステナビリティ</p>
                     <p class="l-news-text">テキストが入りますテキストが入ります</p>
@@ -91,17 +154,7 @@ get_header();
                     <p class="news-day">2024/00/00</p>
                     <p class="l-news-label-txt">お知らせ</p>
                     <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
-                </li>
-                <li>
-                    <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">研究開発・技術録</p>
-                    <p class="l-news-text">テキストが入ります</p>
-                </li>
-                <li>
-                    <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">お知らせ</p>
-                    <p class="l-news-text">テキストが入りますテキストが入ります</p>
-                </li>
+                </li> -->
             </ul>
             <a href="<?php echo esc_url(home_url('/newslist-standard')); ?>" tabindex="0" class="btn--newsmore"><span style="font-style: italic;">NEWS</span>一覧へ</a>
         </div>
@@ -114,31 +167,84 @@ get_header();
                 </div>
             </div>
             <ul class="l-news-lists">
-                <li>
+                <!-- ▽組み込み -->
+                <?php
+                $args = array(
+                    'post_type' => 'post_news',
+                    'post_status' => 'publish',
+                    'posts_per_page' => 4,
+                    'tax_query' => array(
+                        'relation' => 'AND', // すべての条件に一致する投稿を取得
+                        array(
+                            'taxonomy' => 'newstype', // タクソノミー名
+                            'field' => 'slug', // スラッグで指定
+                            'terms' => array('typeir'), // 表示するターム
+                            'operator' => 'IN',
+                        ),
+                        array(
+                            'taxonomy' => 'newstag', // 別のタクソノミー名
+                            'field' => 'slug',
+                            'terms' => array('tagir'), // 表示するターム（必要に応じて変更）
+                            'operator' => 'IN',
+                        ),
+                    ),
+                );
+                $the_query = new WP_Query($args);
+                if ($the_query->have_posts()) :
+                    while ($the_query->have_posts()) : $the_query->the_post();
+                ?>
+                        <li>
+                            <!-- 日時 -->
+                            <p class="news-day">
+                                <time class="c-news-date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
+                                    <?php echo get_the_date('Y/m/d'); ?>
+                                </time>
+                            </p>
+                            <!-- タクソノミー -->
+                            <!-- <p class="l-news-label-txt">展示会</p> -->
+                            <ul class="news-taxonomies" style="display: flex; flex-direction: row; gap:5px; flex-wrap: wrap;">
+                                <?php
+                                $taxonomies = ['newstag'];
+                                foreach ($taxonomies as $taxonomy) {
+                                    $terms = get_the_terms($post->ID, $taxonomy);
+                                    if ($terms) :
+                                        foreach ($terms as $term) :
+                                ?>
+                                            <li class="tax-term">
+                                                <?php echo esc_html($term->name); ?>
+                                            </li>
+                                <?php
+                                        endforeach;
+                                    endif;
+                                }
+                                ?>
+                            </ul>
+                            <!-- ニュースタイトル -->
+                            <!-- <p class="l-news-text">テキストが入ります</p> -->
+                            <p class="c-pdl--s">
+                                <?php
+                                $news_title = get_field('news_title');
+                                if ($news_title) :
+                                    echo esc_html($news_title);
+                                endif;
+                                ?>
+                            </p>
+                        </li>
+                <?php
+                    endwhile;
+                    wp_reset_postdata();
+                endif;
+                ?>
+                <!-- <li>
                     <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">IR</p>
+                    <p class="l-news-label-txt">サステナビリティ</p>
                     <p class="l-news-text">テキストが入りますテキストが入ります</p>
                 </li>
                 <li>
                     <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">IR</p>
+                    <p class="l-news-label-txt">お知らせ</p>
                     <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
-                </li>
-                <li>
-                    <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">IR</p>
-                    <p class="l-news-text">テキストが入ります</p>
-                </li>
-                <li>
-                    <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">IR</p>
-                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
-                </li>
-                <li>
-                    <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">IR</p>
-                    <p class="l-news-text">テキストが入りますテキストが入ります</p>
-                </li>
+                </li> -->
             </ul>
             <a href="<?php echo esc_url(home_url('/newslist-ir')); ?>" tabindex="0" class="btn--newsmore"><span style="font-style: italic;">IR NEWS</span>一覧へ</a>
 

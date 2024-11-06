@@ -69,23 +69,23 @@ get_header('product');
                                     </time>
 
                                     <!-- タクソノミー -->
-                                    <div class="news-taxonomies" style="display: flex; flex-direction: row; gap:5px; flex-wrap: wrap;">
+                                    <ul class="news-taxonomies" style="display: flex; flex-direction: row; gap:5px; flex-wrap: wrap;">
                                         <?php
-                                        $taxonomies = ['newstag']; // tagir タクソノミーのみ表示
+                                        $taxonomies = ['newstag']; // 
                                         foreach ($taxonomies as $taxonomy) {
                                             $terms = get_the_terms($post->ID, $taxonomy);
                                             if ($terms) :
                                                 foreach ($terms as $term) :
                                         ?>
-                                                    <span class="tax-term" style="padding: 2px 8px; border-radius: 10px; border: 1px solid #232323; font-size: 12px;">
+                                                    <li class="tax-term w--90">
                                                         <?php echo esc_html($term->name); ?>
-                                                    </span>
+                                                    </li>
                                         <?php
                                                 endforeach;
                                             endif;
                                         }
                                         ?>
-                                    </div>
+                                    </ul>
 
                                     <!-- ニュースタイトル -->
                                     <p class="c-pdl--s">
@@ -124,39 +124,6 @@ get_header('product');
                             <li class="w--90">IR</li>
                         </ul>
                         <p class="c-pdl--s">第82期 定時株主総会招集ご通知<span>（PDF：3.4MB）</span></p>
-                    </div>
-                </div>
-            </li>
-            <li class="l-news-wrapper">
-                <div class="l-news-wrapper--txt">
-                    <div class="l-news-wrapper--txt-first">
-                        <p class="c-news-date">2024/09/06</p>
-                        <ul>
-                            <li class="w--90">IR</li>
-                        </ul>
-                        <p class="c-pdl--s">2023年度 決算説明会</p>
-                    </div>
-                </div>
-            </li>
-            <li class="l-news-wrapper">
-                <div class="l-news-wrapper--txt">
-                    <div class="l-news-wrapper--txt-first">
-                        <p class="c-news-date">2024/09/06</p>
-                        <ul>
-                            <li class="w--90">IR</li>
-                        </ul>
-                        <p class="c-pdl--s">自己株式の取得状況及び取得終了に関するお知らせ<span>（PDF：95KB）</span></p>
-                    </div>
-                </div>
-            </li>
-            <li class="l-news-wrapper">
-                <div class="l-news-wrapper--txt">
-                    <div class="l-news-wrapper--txt-first">
-                        <p class="c-news-date">2024/09/06</p>
-                        <ul>
-                            <li class="w--90">IR</li>
-                        </ul>
-                        <p class="c-pdl--s">2024年3月期 決算短信（日本基準）（連結）<span>（PDF：384KB）</span></p>
                     </div>
                 </div>
             </li>
