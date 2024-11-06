@@ -158,7 +158,14 @@ get_header('product');
                         <ul>
                             <li class="w--90">IR</li>
                         </ul>
-                        <p class="c-pdl--s">2024年3月期 決算短信（日本基準）（連結）<span>（PDF：384KB）</span></p>
+                        <p class="c-pdl--s">
+                            <?php
+                            $news_date = get_field('news_date');
+                            if ($news_date) :
+                                echo esc_html($news_date);
+                            endif;
+                            ?>
+                        </p>
                     </div>
                 </div>
             </li>
@@ -202,7 +209,7 @@ get_header('product');
                             <a class="" href="<?php the_permalink(); ?>">
                                 <!-- 画像 -->
                                 <?php
-                                $news_img = get_field('news_image');
+                                $news_img = get_field('news_img');
                                 if ($news_img) :
                                 ?>
                                     <img src="<?php echo esc_url($news_img); ?>" alt="" style="max-width: 133px; max-height: 83px; aspect-ratio: 133 / 83;">
