@@ -92,12 +92,13 @@ get_header('product');
                                     <!-- ニュースタイトル -->
                                     <p class="c-pdl--s">
                                         <?php
-                                        $news_text = get_field('news_text');
-                                        if ($news_text) :
-                                            echo esc_html($news_text);
+                                        $news_title = get_field('news_title');
+                                        if ($news_title) :
+                                            echo esc_html($news_title);
                                         endif;
                                         ?>
                                     </p>
+                                </a>
                             </div>
                         </div>
                     </li>
