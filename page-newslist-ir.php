@@ -39,7 +39,7 @@ get_header('product');
                 'post_status' => 'publish',
                 'posts_per_page' => -1,
                 'tax_query' => array( // タクソノミーによるフィルタリング
-                'relation' => 'AND', // すべての条件に一致する投稿を取得
+                    'relation' => 'AND', // すべての条件に一致する投稿を取得
                     array(
                         'taxonomy' => 'newstype', // タクソノミー名
                         'field' => 'slug', // スラッグで指定
@@ -52,48 +52,60 @@ get_header('product');
             if ($the_query->have_posts()) :
                 while ($the_query->have_posts()) : $the_query->the_post();
             ?>
-            <!-- ▲組み込み -->
+                    <!-- ▲組み込み -->
 
-            <li class="l-news-wrapper">
-                <div class="l-news-wrapper--txt">
-                    <div class="l-news-wrapper--txt-first">
-                        <!-- リンク -->
-                        <a class="" href="<?php the_permalink(); ?>">
-                            <!-- 日時 -->
-                            <!-- <p class="c-news-date">2024/09/06</p> -->
-                            <time class="c-news-date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
-                                <?php echo get_the_date('Y/m/d'); ?>
-                            </time>
-                            <!-- タクソノミー -->
-                            <ul>
-                                <!-- <li class="w--90">IR</li> -->
-                            <?php
-                            $taxonomies = ['tagir'];
-                            foreach ($taxonomies as $taxonomy) {
-                                $terms = get_the_terms($post->ID, $taxonomy);
-                                if ($terms) :
-                            ?>
-                                <ul class="" style="display: flex;  flex-direction: row; gap:5px; flex-wrap: wrap;">
-                                    <?php
-                                    foreach ($terms as $term) :
-                                    ?>
-                                        <li class="w--90">
-                                            <?php echo esc_html($term->name); ?>
-                                        </li>
-                                    <?php
-                                    endforeach;
-                                    ?>
-                                </ul>
-                            <?php
-                                endif;
-                            }
-                            ?>
-                            </ul>
-                            <!-- ニュースタイトル -->
-                            <p class="c-pdl--s">2025年3月期 第1四半期決算短信（日本基準）（連結）<span>（PDF：635KB）</span></p>
-                    </div>
-                </div>
-            </li>
+                    <li class="l-news-wrapper">
+                        <div class="l-news-wrapper--txt">
+                            <div class="l-news-wrapper--txt-first">
+                                <!-- リンク -->
+                                <a class="" href="<?php the_permalink(); ?>">
+                                    <!-- 日時 -->
+                                    <!-- <p class="c-news-date">2024/09/06</p> -->
+                                    <time class="c-news-date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
+                                        <?php echo get_the_date('Y/m/d'); ?>
+                                    </time>
+                                    <!-- タクソノミー -->
+                                    <ul>
+                                        <!-- <li class="w--90">IR</li> -->
+                                        <?php
+                                        $taxonomies = ['tagir'];
+                                        foreach ($taxonomies as $taxonomy) {
+                                            $terms = get_the_terms($post->ID, $taxonomy);
+                                            if ($terms) :
+                                        ?>
+                                                <ul class="" style="display: flex;  flex-direction: row; gap:5px; flex-wrap: wrap;">
+                                                    <?php
+                                                    foreach ($terms as $term) :
+                                                    ?>
+                                                        <li class="w--90">
+                                                            <?php echo esc_html($term->name); ?>
+                                                        </li>
+                                                    <?php
+                                                    endforeach;
+                                                    ?>
+                                                </ul>
+                                        <?php
+                                            endif;
+                                        }
+                                        ?>
+                                    </ul>
+                                    <!-- ニュースタイトル -->
+                                    <p class="c-pdl--s">
+                                        <?php
+                                        $news_text = get_field('news_text');
+                                        if ($news_text) :
+                                            echo esc_html($news_text);
+                                        endif;
+                                        ?>
+                                    </p>
+                            </div>
+                        </div>
+                    </li>
+            <?php
+                endwhile;
+                wp_reset_postdata();
+            endif;
+            ?>
             <li class="l-news-wrapper">
                 <div class="l-news-wrapper--txt">
                     <div class="l-news-wrapper--txt-first">
@@ -162,99 +174,99 @@ get_header('product');
     <!-- ここからSCFを利用したコード -->
     <h2 class="" style="font-size:clamp(16px, 2vw, 30px)!important;">News IR</h2>
     <section class="" id="">
-                <ul class="" style="">
-                    
-                    <?php
-                    $args = array(
-                        'post_type' => 'post_news',
-                        'post_status' => 'publish',
-                        'posts_per_page' => -1,
-                        'tax_query' => array( // タクソノミーによるフィルタリング
-                        'relation' => 'AND', // すべての条件に一致する投稿を取得
-                            array(
-                                'taxonomy' => 'newstype', // タクソノミー名
-                                'field' => 'slug', // スラッグで指定
-                                'terms' => array('typeir'), // 表示するターム
-                                'operator' => 'IN', // 指定されたタームに一致する投稿のみ取得
-                            ),
-                        ),
-                    );
+        <ul class="" style="">
 
-                    $the_query = new WP_Query($args);
-                    if ($the_query->have_posts()) :
-                        while ($the_query->have_posts()) : $the_query->the_post();
-                    ?>
-                            <li class="">
-                                <div class="" style="list-style-type: none;">
-                                    <a class="" href="<?php the_permalink(); ?>">
-                                        <!-- 画像 -->
-                                        <?php
-                                        $news_img = get_field('news_image');
-                                        if ($news_img) :
-                                        ?>
-                                            <img src="<?php echo esc_url($news_img); ?>" alt="" style="max-width: 133px; max-height: 83px; aspect-ratio: 133 / 83;">
-                                        <?php endif; ?>
-                                        <!-- 施工名 -->
-                                        <h3 class="" style="font-size: 16px; display: flex; padding: 5px 0px;">
-                                            <?php
-                                            $news_title = get_field('news_title');
-                                            if ($news_title) :
-                                                echo esc_html($news_title);
-                                            endif;
-                                            ?>
-                                        </h3>
-                                        <!-- タクソノミー -->
-                                        <div style="display: flex; flex-wrap: wrap; gap: 5px; max-width: 300px;">
-                                            <?php
-                                            $taxonomies = ['tagir'];
-                                            foreach ($taxonomies as $taxonomy) {
-                                                $terms = get_the_terms($post->ID, $taxonomy);
-                                                if ($terms) :
-                                            ?>
-                                                    <ul class="" style="display: flex;  flex-direction: row; gap:5px; flex-wrap: wrap;">
-                                                        <?php
-                                                        foreach ($terms as $term) :
-                                                        ?>
-                                                            <li style="padding: 2px 8px; border-radius: 10px; border: 1px solid #232323; width: max-content; font-size:12px;">
-                                                                <?php echo esc_html($term->name); ?>
-                                                            </li>
-                                                        <?php
-                                                        endforeach;
-                                                        ?>
-                                                    </ul>
-                                            <?php
-                                                endif;
-                                            }
-                                            ?>
-                                        </div>
-                                        <!-- ニュースタイトル -->
-                                        <p class="" style="font-size: 14px; display: flex; padding: 5px 0px;">
-                                            <?php
-                                            $news_text = get_field('news_text');
-                                            if ($news_text) :
-                                                echo esc_html($news_text);
-                                            endif;
-                                            ?>
-                                        </p>
-                                        <!-- ニュースファイル -->
-                                        <p class="" style="font-size: 14px; display: flex; padding: 5px 0px;">
-                                            <?php
-                                            $news_file = get_field('news_file');
-                                            if ($news_file) :
-                                                echo esc_html($news_file);
-                                            endif;
-                                            ?>
-                                        </p>
-                                    </a>
+            <?php
+            $args = array(
+                'post_type' => 'post_news',
+                'post_status' => 'publish',
+                'posts_per_page' => -1,
+                'tax_query' => array( // タクソノミーによるフィルタリング
+                    'relation' => 'AND', // すべての条件に一致する投稿を取得
+                    array(
+                        'taxonomy' => 'newstype', // タクソノミー名
+                        'field' => 'slug', // スラッグで指定
+                        'terms' => array('typeir'), // 表示するターム
+                        'operator' => 'IN', // 指定されたタームに一致する投稿のみ取得
+                    ),
+                ),
+            );
+
+            $the_query = new WP_Query($args);
+            if ($the_query->have_posts()) :
+                while ($the_query->have_posts()) : $the_query->the_post();
+            ?>
+                    <li class="">
+                        <div class="" style="list-style-type: none;">
+                            <a class="" href="<?php the_permalink(); ?>">
+                                <!-- 画像 -->
+                                <?php
+                                $news_img = get_field('news_image');
+                                if ($news_img) :
+                                ?>
+                                    <img src="<?php echo esc_url($news_img); ?>" alt="" style="max-width: 133px; max-height: 83px; aspect-ratio: 133 / 83;">
+                                <?php endif; ?>
+                                <!-- 施工名 -->
+                                <h3 class="" style="font-size: 16px; display: flex; padding: 5px 0px;">
+                                    <?php
+                                    $news_title = get_field('news_title');
+                                    if ($news_title) :
+                                        echo esc_html($news_title);
+                                    endif;
+                                    ?>
+                                </h3>
+                                <!-- タクソノミー -->
+                                <div style="display: flex; flex-wrap: wrap; gap: 5px; max-width: 300px;">
+                                    <?php
+                                    $taxonomies = ['tagir'];
+                                    foreach ($taxonomies as $taxonomy) {
+                                        $terms = get_the_terms($post->ID, $taxonomy);
+                                        if ($terms) :
+                                    ?>
+                                            <ul class="" style="display: flex;  flex-direction: row; gap:5px; flex-wrap: wrap;">
+                                                <?php
+                                                foreach ($terms as $term) :
+                                                ?>
+                                                    <li style="padding: 2px 8px; border-radius: 10px; border: 1px solid #232323; width: max-content; font-size:12px;">
+                                                        <?php echo esc_html($term->name); ?>
+                                                    </li>
+                                                <?php
+                                                endforeach;
+                                                ?>
+                                            </ul>
+                                    <?php
+                                        endif;
+                                    }
+                                    ?>
                                 </div>
-                            </li>
-                    <?php
-                        endwhile;
-                        wp_reset_postdata();
-                    endif;
-                    ?>
-                </ul>
-            </section>
+                                <!-- ニュースタイトル -->
+                                <p class="" style="font-size: 14px; display: flex; padding: 5px 0px;">
+                                    <?php
+                                    $news_text = get_field('news_text');
+                                    if ($news_text) :
+                                        echo esc_html($news_text);
+                                    endif;
+                                    ?>
+                                </p>
+                                <!-- ニュースファイル -->
+                                <p class="" style="font-size: 14px; display: flex; padding: 5px 0px;">
+                                    <?php
+                                    $news_file = get_field('news_file');
+                                    if ($news_file) :
+                                        echo esc_html($news_file);
+                                    endif;
+                                    ?>
+                                </p>
+                            </a>
+                        </div>
+                    </li>
+            <?php
+                endwhile;
+                wp_reset_postdata();
+            endif;
+            ?>
+        </ul>
+    </section>
 
 
 
