@@ -38,13 +38,19 @@ get_header('product');
                 'post_type' => 'post_news',
                 'post_status' => 'publish',
                 'posts_per_page' => -1,
-                'tax_query' => array( // タクソノミーによるフィルタリング
+                'tax_query' => array(
                     'relation' => 'AND', // すべての条件に一致する投稿を取得
                     array(
                         'taxonomy' => 'newstype', // タクソノミー名
                         'field' => 'slug', // スラッグで指定
                         'terms' => array('typeir'), // 表示するターム
-                        'operator' => 'IN', // 指定されたタームに一致する投稿のみ取得
+                        'operator' => 'IN',
+                    ),
+                    array(
+                        'taxonomy' => 'newstag', // 別のタクソノミー名
+                        'field' => 'slug',
+                        'terms' => array('tagir'), // 表示するターム（必要に応じて変更）
+                        'operator' => 'IN',
                     ),
                 ),
             );
@@ -52,43 +58,35 @@ get_header('product');
             if ($the_query->have_posts()) :
                 while ($the_query->have_posts()) : $the_query->the_post();
             ?>
-                    <!-- ▲組み込み -->
-
                     <li class="l-news-wrapper">
                         <div class="l-news-wrapper--txt">
                             <div class="l-news-wrapper--txt-first">
                                 <!-- リンク -->
-                                <a class="" href="<?php the_permalink(); ?>">
+                                <a href="<?php the_permalink(); ?>">
                                     <!-- 日時 -->
-                                    <!-- <p class="c-news-date">2024/09/06</p> -->
                                     <time class="c-news-date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
                                         <?php echo get_the_date('Y/m/d'); ?>
                                     </time>
+
                                     <!-- タクソノミー -->
-                                    <ul>
-                                        <!-- <li class="w--90">IR</li> -->
+                                    <div class="news-taxonomies" style="display: flex; flex-direction: row; gap:5px; flex-wrap: wrap;">
                                         <?php
-                                        $taxonomies = ['tagir'];
+                                        $taxonomies = ['newstag']; // tagir タクソノミーのみ表示
                                         foreach ($taxonomies as $taxonomy) {
                                             $terms = get_the_terms($post->ID, $taxonomy);
                                             if ($terms) :
+                                                foreach ($terms as $term) :
                                         ?>
-                                                <ul class="" style="display: flex;  flex-direction: row; gap:5px; flex-wrap: wrap;">
-                                                    <?php
-                                                    foreach ($terms as $term) :
-                                                    ?>
-                                                        <li class="w--90">
-                                                            <?php echo esc_html($term->name); ?>
-                                                        </li>
-                                                    <?php
-                                                    endforeach;
-                                                    ?>
-                                                </ul>
+                                                    <span class="tax-term" style="padding: 2px 8px; border-radius: 10px; border: 1px solid #232323; font-size: 12px;">
+                                                        <?php echo esc_html($term->name); ?>
+                                                    </span>
                                         <?php
+                                                endforeach;
                                             endif;
                                         }
                                         ?>
-                                    </ul>
+                                    </div>
+
                                     <!-- ニュースタイトル -->
                                     <p class="c-pdl--s">
                                         <?php
@@ -158,14 +156,7 @@ get_header('product');
                         <ul>
                             <li class="w--90">IR</li>
                         </ul>
-                        <p class="c-pdl--s">
-                            <?php
-                            $news_date = get_field('news_date');
-                            if ($news_date) :
-                                echo esc_html($news_date);
-                            endif;
-                            ?>
-                        </p>
+                        <p class="c-pdl--s">2024年3月期 決算短信（日本基準）（連結）<span>（PDF：384KB）</span></p>
                     </div>
                 </div>
             </li>
@@ -205,15 +196,9 @@ get_header('product');
                 while ($the_query->have_posts()) : $the_query->the_post();
             ?>
                     <li class="">
-                        <div class="" style="list-style-type: none;">
-                            <a class="" href="<?php the_permalink(); ?>">
-                                <!-- 画像 -->
-                                <?php
-                                $news_img = get_field('news_img');
-                                if ($news_img) :
-                                ?>
-                                    <img src="<?php echo esc_url($news_img); ?>" alt="" style="max-width: 133px; max-height: 83px; aspect-ratio: 133 / 83;">
-                                <?php endif; ?>
+                        <a class="" href="<?php the_permalink(); ?>">
+                            <div class="" style="list-style-type: none;">
+
                                 <!-- 施工名 -->
                                 <h3 class="" style="font-size: 16px; display: flex; padding: 5px 0px;">
                                     <?php
@@ -265,8 +250,9 @@ get_header('product');
                                     endif;
                                     ?>
                                 </p>
-                            </a>
-                        </div>
+
+                            </div>
+                        </a>
                     </li>
             <?php
                 endwhile;
