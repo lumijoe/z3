@@ -32,14 +32,65 @@ get_header('product');
     </section>
     <section class="l-newslist">
         <ul>
+            <!-- ▽組み込み -->
+            <?php
+            $args = array(
+                'post_type' => 'post_news',
+                'post_status' => 'publish',
+                'posts_per_page' => -1,
+                'tax_query' => array( // タクソノミーによるフィルタリング
+                'relation' => 'AND', // すべての条件に一致する投稿を取得
+                    array(
+                        'taxonomy' => 'newstype', // タクソノミー名
+                        'field' => 'slug', // スラッグで指定
+                        'terms' => array('typeir'), // 表示するターム
+                        'operator' => 'IN', // 指定されたタームに一致する投稿のみ取得
+                    ),
+                ),
+            );
+            $the_query = new WP_Query($args);
+            if ($the_query->have_posts()) :
+                while ($the_query->have_posts()) : $the_query->the_post();
+            ?>
+            <!-- ▲組み込み -->
+
             <li class="l-news-wrapper">
                 <div class="l-news-wrapper--txt">
                     <div class="l-news-wrapper--txt-first">
-                        <p class="c-news-date">2024/09/06</p>
-                        <ul>
-                            <li class="w--90">IR</li>
-                        </ul>
-                        <p class="c-pdl--s">2025年3月期 第1四半期決算短信（日本基準）（連結）<span>（PDF：635KB）</span></p>
+                        <!-- リンク -->
+                        <a class="" href="<?php the_permalink(); ?>">
+                            <!-- 日時 -->
+                            <!-- <p class="c-news-date">2024/09/06</p> -->
+                            <time class="c-news-date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
+                                <?php echo get_the_date('Y/m/d'); ?>
+                            </time>
+                            <!-- タクソノミー -->
+                            <ul>
+                                <!-- <li class="w--90">IR</li> -->
+                            <?php
+                            $taxonomies = ['tagir'];
+                            foreach ($taxonomies as $taxonomy) {
+                                $terms = get_the_terms($post->ID, $taxonomy);
+                                if ($terms) :
+                            ?>
+                                <ul class="" style="display: flex;  flex-direction: row; gap:5px; flex-wrap: wrap;">
+                                    <?php
+                                    foreach ($terms as $term) :
+                                    ?>
+                                        <li class="w--90">
+                                            <?php echo esc_html($term->name); ?>
+                                        </li>
+                                    <?php
+                                    endforeach;
+                                    ?>
+                                </ul>
+                            <?php
+                                endif;
+                            }
+                            ?>
+                            </ul>
+                            <!-- ニュースタイトル -->
+                            <p class="c-pdl--s">2025年3月期 第1四半期決算短信（日本基準）（連結）<span>（PDF：635KB）</span></p>
                     </div>
                 </div>
             </li>
