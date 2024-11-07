@@ -86,7 +86,6 @@ get_header('product');
                                 </ul>
                             </div>
                             <!-- ニュースタイトル、リンク -->
-                            <!-- リンク -->
                             <div class="l-news-wrapper--txt-second">
                                 <a href="<?php echo esc_url(get_permalink()); ?>">
                                     <p class="c-pdl--s">
