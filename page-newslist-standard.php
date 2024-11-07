@@ -37,11 +37,11 @@ get_header('product');
 <section class="l-news c-malr--wide c-pdlr--morewide">
     <div>
         <ul>
-            <li data-slug="all" class="news-filter">すべて</li>
-            <li data-slug="tagexhibition" class="news-filter">展示会</li>
-            <li data-slug="tagnews" class="news-filter">お知らせ</li>
-            <li data-slug="tagtech" class="news-filter">研究開発・技術録</li>
-            <li data-slug="tagsustainability" class="news-filter">サステナビリティ</li>
+            <li data-slug="all" class="news-filter" style="cursor: pointer;">すべて</li>
+            <li data-slug="tagexhibition" class="news-filter" style="cursor: pointer;">展示会</li>
+            <li data-slug="tagnews" class="news-filter" style="cursor: pointer;">お知らせ</li>
+            <li data-slug="tagtech" class="news-filter" style="cursor: pointer;">研究開発・技術録</li>
+            <li data-slug="tagsustainability" class="news-filter" style="cursor: pointer;">サステナビリティ</li>
         </ul>
         <a href="<?php echo esc_url(home_url('/newslist-ir')); ?>" class="c-txt--s c-position--right c-endicon-arrow--s">IRニュースはこちら</a>
     </div>
