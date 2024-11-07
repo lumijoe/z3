@@ -22,7 +22,7 @@ get_header('product');
     <p class="c-imagetitle"><span class="c-imagetitle--l">N</span>ews</p>
 </div>
 <!-- news -->
-<section class="l-news c-malr--wide c-pdlr--morewide">
+<!-- <section class="l-news c-malr--wide c-pdlr--morewide">
     <div>
         <ul>
             <li>すべて</li>
@@ -30,6 +30,18 @@ get_header('product');
             <li>お知らせ</li>
             <li>研究開発・技術録</li>
             <li>サステナビリティ</li>
+        </ul>
+        <a href="<?php echo esc_url(home_url('/newslist-ir')); ?>" class="c-txt--s c-position--right c-endicon-arrow--s">IRニュースはこちら</a>
+    </div>
+</section> -->
+<section class="l-news c-malr--wide c-pdlr--morewide">
+    <div>
+        <ul>
+            <li data-slug="all" class="news-filter">すべて</li>
+            <li data-slug="tagexhibition" class="news-filter">展示会</li>
+            <li data-slug="tagnews" class="news-filter">お知らせ</li>
+            <li data-slug="tagtech" class="news-filter">研究開発・技術録</li>
+            <li data-slug="tagsustainability" class="news-filter">サステナビリティ</li>
         </ul>
         <a href="<?php echo esc_url(home_url('/newslist-ir')); ?>" class="c-txt--s c-position--right c-endicon-arrow--s">IRニュースはこちら</a>
     </div>
@@ -138,6 +150,32 @@ get_header('product');
         }
     });
 </script>
+<script>
+    document.querySelectorAll('.news-filter').forEach(item => {
+    item.addEventListener('click', function() {
+        const slug = this.getAttribute('data-slug');
+        fetchNewsByTag(slug);
+    });
+});
+
+function fetchNewsByTag(slug) {
+    const data = new FormData();
+    data.append('action', 'filter_news');
+    data.append('tag_slug', slug);
+
+    fetch('<?php echo admin_url("admin-ajax.php"); ?>', {
+        method: 'POST',
+        body: data
+    })
+    .then(response => response.text())
+    .then(data => {
+        document.querySelector('.l-newslist ul').innerHTML = data;
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+</script>
+
 </body>
 
 </html>
