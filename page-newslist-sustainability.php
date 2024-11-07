@@ -106,35 +106,6 @@ get_header('product');
                 wp_reset_postdata();
             endif;
             ?>
-            <li class="l-news-wrapper">
-                <img src="../wp-content/uploads/assets/images/img_11.jpg" alt="">
-                <div class="l-news-wrapper--txt">
-                    <div class="l-news-wrapper--txt-first">
-                        <p class="c-news-date">2024/09/06</p>
-                        <ul>
-                            <li>展示会</li>
-                            <li>サステナビリティ</li>
-                        </ul>
-                    </div>
-                    <div class="l-news-wrapper--txt-second">
-                        <p class="textoverm">「BATTERY JAPAN秋（スマートエネルギーWEEK内）」出展のお知らせ</p>
-                    </div>
-                </div>
-            </li>
-            <li class="l-news-wrapper">
-                <img src="../wp-content/uploads/assets/images/img_01.jpg" alt="">
-                <div class="l-news-wrapper--txt">
-                    <div class="l-news-wrapper--txt-first">
-                        <p class="c-news-date">2024/09/06</p>
-                        <ul>
-                            <li>サステナビリティ</li>
-                        </ul>
-                    </div>
-                    <div class="l-news-wrapper--txt-second">
-                        <p class="textoverm">（新聞記事掲載）回転炉床炉開発で提携（2024年9月12日付 日刊工業新聞 PDF：77.6KB）</p>
-                    </div>
-                </div>
-            </li>
         </ul>
         <div class="l-pagenation">
             <ul>

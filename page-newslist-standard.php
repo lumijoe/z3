@@ -112,35 +112,6 @@ get_header('product');
             wp_reset_postdata();
         endif;
         ?>
-        <li class="l-news-wrapper">
-            <img src="../wp-content/uploads/assets/images/img_02.jpg" alt="">
-            <div class="l-news-wrapper--txt">
-                <div class="l-news-wrapper--txt-first">
-                    <p class="c-news-date">2024/09/06</p>
-                    <ul>
-                        <li>展示会</li>
-                        <li>サステナビリティ</li>
-                    </ul>
-                </div>
-                <div class="l-news-wrapper--txt-second">
-                    <p class="textoverm">環境WEEK2024の出展が終了しました</p>
-                </div>
-            </div>
-        </li>
-        <li class="l-news-wrapper">
-            <img src="../wp-content/uploads/assets/images/img_03.jpg" alt="">
-            <div class="l-news-wrapper--txt">
-                <div class="l-news-wrapper--txt-first">
-                    <p class="c-news-date">2024/09/06</p>
-                    <ul>
-                        <li>研究開発・技術録</li>
-                    </ul>
-                </div>
-                <div class="l-news-wrapper--txt-second">
-                    <p class="textoverm">サーモテックニュースvol.14<span>PDF：35.7KB</span></p>
-                </div>
-            </div>
-        </li>
     </ul>
     <div class="l-pagenation">
         <ul>
