@@ -62,58 +62,51 @@ get_header('product');
         if ($the_query->have_posts()) :
             while ($the_query->have_posts()) : $the_query->the_post();
         ?>
-                <li class="l-news-wrapper">
-                    <!-- 画像のエスケープ処理 -->
-                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/img_01.jpg'); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
-                    <div class="l-news-wrapper--txt">
-                        <div class="l-news-wrapper--txt-first">
+        <li class="l-news-wrapper">
+            <!-- 画像のエスケープ処理 -->
+            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/img_01.jpg'); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
+            <div class="l-news-wrapper--txt">
+                <div class="l-news-wrapper--txt-first">
 
-                            <!-- 日時のエスケープ処理 -->
-                            <time class="c-news-date" datetime="<?php echo esc_attr(get_the_date('Y-m-d')); ?>">
-                                <?php echo esc_html(get_the_date('Y/m/d')); ?>
-                            </time>
-                            <!-- タクソノミー -->
-                            <ul class="news-taxonomies" style="display: flex; flex-direction: row; gap:5px; flex-wrap: wrap;">
-                                <?php
-                                $taxonomies = ['newstag'];
-                                foreach ($taxonomies as $taxonomy) {
-                                    $terms = get_the_terms($post->ID, $taxonomy);
-                                    if ($terms) :
-                                        foreach ($terms as $term) :
-                                ?>
-                                            <li class="tax-term">
-                                                <?php echo esc_html($term->name); ?>
-                                            </li>
-                                <?php
-                                        endforeach;
-                                    endif;
-                                }
-                                ?>
-                            </ul>
-                        </div>
-                        <!-- ニュースタイトルのエスケープ処理 -->
-                        <p class="c-pdl--s">
-                            <?php
-                            $news_title = get_field('news_title');
-                            if ($news_title) :
-                                echo esc_html($news_title);
+                    <!-- 日時のエスケープ処理 -->
+                    <time class="c-news-date" datetime="<?php echo esc_attr(get_the_date('Y-m-d')); ?>">
+                        <?php echo esc_html(get_the_date('Y/m/d')); ?>
+                    </time>
+                    <!-- タクソノミー -->
+                    <ul class="news-taxonomies" style="display: flex; flex-direction: row; gap:5px; flex-wrap: wrap;">
+                        <?php
+                        $taxonomies = ['newstag'];
+                        foreach ($taxonomies as $taxonomy) {
+                            $terms = get_the_terms($post->ID, $taxonomy);
+                            if ($terms) :
+                                foreach ($terms as $term) :
+                        ?>
+                                    <li class="tax-term">
+                                        <?php echo esc_html($term->name); ?>
+                                    </li>
+                        <?php
+                                endforeach;
                             endif;
-                            ?>
+                        }
+                        ?>
+                    </ul>
+                </div>
+                <!-- ニュースタイトルのエスケープ処理 -->
+                <div class="l-news-wrapper--txt-second">
+                    <a href="<?php echo esc_url(get_permalink()); ?>">
+                        <!-- <p class="c-pdl--s textoverm"> -->
+                        <p class="c-pdl--s">
+                        <?php
+                        $news_title = get_field('news_title');
+                        if ($news_title) :
+                            echo esc_html($news_title);
+                        endif;
+                        ?>
                         </p>
-                        <!-- リンク -->
-                        <a href="<?php echo esc_url(get_permalink()); ?>">
-                            <div class="l-news-wrapper--txt-second">
-                                <p class="textoverm">
-                                    <?php
-                                    if ($news_title) :
-                                        echo esc_html($news_title);
-                                    endif;
-                                    ?>
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
+                    </a>
+                </div>
+            </div>
+        </li>
         <?php
             endwhile;
             wp_reset_postdata();
