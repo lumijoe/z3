@@ -32,6 +32,8 @@
   flex-direction: row;
   align-items: center;
   gap: 20px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   border-top: 0.7px solid #e0e0e0;
   border-bottom: 0.7px solid #e0e0e0;
 }
