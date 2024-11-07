@@ -88,6 +88,7 @@ get_header('product');
                             <!-- ニュースタイトル、リンク -->
                             <div class="l-news-wrapper--txt-second">
                                 <a href="<?php echo esc_url(get_permalink()); ?>">
+                                    <!-- <p class="c-pdl--s textoverm"> -->
                                     <p class="c-pdl--s">
                                     <?php
                                     $news_title = get_field('news_title');
