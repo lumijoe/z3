@@ -58,4 +58,12 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.l-newslist .l-news-wrapper--txt-second-ir {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }/*# sourceMappingURL=newsstandard.css.map */
