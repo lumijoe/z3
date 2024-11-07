@@ -106,28 +106,6 @@ get_header('product');
                 wp_reset_postdata();
             endif;
             ?>
-            <li class="l-news-wrapper">
-                <div class="l-news-wrapper--txt">
-                    <div class="l-news-wrapper--txt-first">
-                        <p class="c-news-date">2024/09/06</p>
-                        <ul>
-                            <li class="w--90">IR</li>
-                        </ul>
-                        <p class="c-pdl--s">決議ご通知<span>（PDF：199KB）</span></p>
-                    </div>
-                </div>
-            </li>
-            <li class="l-news-wrapper">
-                <div class="l-news-wrapper--txt">
-                    <div class="l-news-wrapper--txt-first">
-                        <p class="c-news-date">2024/09/06</p>
-                        <ul>
-                            <li class="w--90">IR</li>
-                        </ul>
-                        <p class="c-pdl--s">第82期 定時株主総会招集ご通知<span>（PDF：3.4MB）</span></p>
-                    </div>
-                </div>
-            </li>
         </ul>
         <div class="l-pagenation">
             <ul>
