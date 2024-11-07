@@ -313,3 +313,7 @@ item.setAttribute('tabindex', '0');
 ニュースだし訳の方向性
 ・ニュースページのだしわけ=ニュースタイプタクそのミー=news
 
+## 後で使用するcss
+<p class="textoverm">ニュースのページで使用していたが一旦保留
+
+

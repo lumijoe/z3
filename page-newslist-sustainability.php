@@ -85,27 +85,21 @@ get_header('product');
                                     ?>
                                 </ul>
                             </div>
-                            <!-- ニュースタイトル -->
-                            <p class="c-pdl--s">
-                                <?php
-                                $news_title = get_field('news_title');
-                                if ($news_title) :
-                                    echo esc_html($news_title);
-                                endif;
-                                ?>
-                            </p>
+                            <!-- ニュースタイトル、リンク -->
+                            <!-- <p class="textoverm"> -->
                             <!-- リンク -->
-                            <a href="<?php echo esc_url(get_permalink()); ?>">
-                                <div class="l-news-wrapper--txt-second">
-                                    <p class="textoverm">
-                                        <?php
-                                        if ($news_title) :
-                                            echo esc_html($news_title);
-                                        endif;
-                                        ?>
+                            <div class="l-news-wrapper--txt-second">
+                                <a href="<?php echo esc_url(get_permalink()); ?>">
+                                    <p class="c-pdl--s">
+                                    <?php
+                                    $news_title = get_field('news_title');
+                                    if ($news_title) :
+                                        echo esc_html($news_title);
+                                    endif;
+                                    ?>
                                     </p>
-                                </div>
-                            </a>
+                                </a>
+                            </div>         
                         </div>
                     </li>
             <?php
