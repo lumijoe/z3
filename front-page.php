@@ -143,7 +143,7 @@ get_header();
                     wp_reset_postdata();
                 endif;
                 ?>
-                <!-- <li>
+                <li>
                     <p class="news-day">2024/00/00</p>
                     <p class="l-news-label-txt">サステナビリティ</p>
                     <p class="l-news-text">テキストが入りますテキストが入ります</p>
@@ -152,7 +152,7 @@ get_header();
                     <p class="news-day">2024/00/00</p>
                     <p class="l-news-label-txt">お知らせ</p>
                     <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
-                </li> -->
+                </li>
             </ul>
             <a href="<?php echo esc_url(home_url('/newslist-standard')); ?>" tabindex="0" class="btn--newsmore"><span style="font-style: italic;">NEWS</span>一覧へ</a>
         </div>
@@ -231,7 +231,7 @@ get_header();
                     wp_reset_postdata();
                 endif;
                 ?>
-                <!-- <li>
+                <li>
                     <p class="news-day">2024/00/00</p>
                     <p class="l-news-label-txt">サステナビリティ</p>
                     <p class="l-news-text">テキストが入りますテキストが入ります</p>
@@ -240,7 +240,7 @@ get_header();
                     <p class="news-day">2024/00/00</p>
                     <p class="l-news-label-txt">お知らせ</p>
                     <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
-                </li> -->
+                </li>
             </ul>
             <a href="<?php echo esc_url(home_url('/newslist-ir')); ?>" tabindex="0" class="btn--newsmore"><span style="font-style: italic;">IR NEWS</span>一覧へ</a>
 
