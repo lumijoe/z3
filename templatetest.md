@@ -674,3 +674,14 @@ get_footer(); // footer.php を読み込む
             </ul>
         </div>
     </section>
+
+## パンくず
+<div class="l-breadcrumbs c-pdlr--wide">
+    <ul>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>">TOP</a></li>
+        <li><a href="<?php echo esc_url(home_url('/')); ?>">ニュースルーム</a></li>
+    </ul>
+    <?php if(function_exists('bcn_display')) {
+        bcn_display();
+    } ?>
+</div>

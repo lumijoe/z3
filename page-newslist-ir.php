@@ -9,12 +9,6 @@
 get_header('product');
 ?>
 <main>
-    <div class="l-breadcrumbs c-pdlr--wide">
-        <ul>
-            <li><a href="<?php echo esc_url(home_url('/')); ?>">TOP</a></li>
-            <li><a href="<?php echo esc_url(home_url('/newslist-ir')); ?>">IRニュース（IR適時開示情報）</a></li>
-        </ul>
-    </div>
     <div class="l-title--page c-pdlr--wide">
         <h2 class="c-pagetitle-h2">IRニュース（IR適時開示情報）</h2>
     </div>

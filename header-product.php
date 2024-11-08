@@ -36,5 +36,10 @@
                 </ul>
             </nav>
         </section>
+        <div class="l-breadcrumbs c-pdlr--wide">
+            <p style="font-size:10px; margin-bottom:0px;"><?php if(function_exists('bcn_display')) {
+                bcn_display();
+            } ?></p>
+        </div>
     </header>
     <main>

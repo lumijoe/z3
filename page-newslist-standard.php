@@ -8,12 +8,7 @@
 
 get_header('product');
 ?>
-<div class="l-breadcrumbs c-pdlr--wide">
-    <ul>
-        <li><a href="<?php echo esc_url(home_url('/')); ?>">TOP</a></li>
-        <li><a href="<?php echo esc_url(home_url('/')); ?>">ニュースルーム</a></li>
-    </ul>
-</div>
+
 <div class="l-title--page c-pdlr--wide">
     <h2 class="c-pagetitle-h2">ニュースルーム</h2>
 </div>
