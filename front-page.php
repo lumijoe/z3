@@ -150,7 +150,7 @@ get_header();
                 $args = array(
                     'post_type' => 'post_news',
                     'post_status' => 'publish',
-                    'posts_per_page' => 5,
+                    'posts_per_page' => 3,
                     'tax_query' => array(
                         'relation' => 'AND', // すべての条件に一致する投稿を取得
                         array(
@@ -228,7 +228,7 @@ get_header();
                 $args = array(
                     'post_type' => 'post_news',
                     'post_status' => 'publish',
-                    'posts_per_page' => 5,
+                    'posts_per_page' => 3,
                     'tax_query' => array(
                         'relation' => 'AND', // すべての条件に一致する投稿を取得
                         array(

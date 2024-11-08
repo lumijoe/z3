@@ -211,6 +211,11 @@ a {
   margin-left: 5px;
 }
 
+@media (min-width: 890px) {
+  .l-news {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 p {
   font-size: 14px;
 }
@@ -303,8 +308,7 @@ p {
   background-color: #abb8c3;
   height: auto;
   width: 100%;
-  display: flex;
-  flex-direction: row;
+  display: grid;
   justify-content: center;
   padding-left: 5%;
   padding-right: 5%;
