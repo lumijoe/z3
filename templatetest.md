@@ -633,3 +633,44 @@ get_header();
 <?php
 get_footer(); // footer.php を読み込む
 ?>
+
+
+## 製品情報のハッシュタグなどで使用できるかも
+<section class="l-topics">
+        <h2 class="h2-ttl--main">Topics</h2>
+        <p class="h2-ttl--sub">トピックス</p>
+        <div class="l-swiper">
+            <ul>
+                <li>
+                    <div class="l-topics--img">
+                        <img src="./wp-content/uploads/assets/images/img_01.jpg" alt="" width="230" height="160">
+                    </div>
+                    <p class="l-topics--title">製品DDDR、2024年12月販売開始</p>
+                </li>
+                <li>
+                    <div class="l-topics--img">
+                        <img src="./wp-content/uploads/assets/images/img_02.jpg" alt="" width="230" height="160">
+                        <p class="l-topics--title">2025春産業フェアに出展</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="l-topics--img">
+                        <img src="./wp-content/uploads/assets/images/img_03.jpg" alt="" width="230" height="160">
+                        <p class="l-topics--title">製品を〇〇会社に提供</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="l-topics--img">
+                        <img src="./wp-content/uploads/assets/images/img_04.jpg" alt="" width="230" height="160">
+                        <p class="l-topics--title">海外提携パートナー情報を更新</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="l-topics--img">
+                        <img src="./wp-content/uploads/assets/images/img_05.jpg" alt="" width="230" height="160">
+                        <p class="l-topics--title">採用情報を更新</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>

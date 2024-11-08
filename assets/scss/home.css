@@ -276,7 +276,6 @@ p {
 
 .l-topics {
   background-color: rgb(255, 255, 255);
-  min-height: 370px;
   width: 100%;
   margin: 0;
   overflow: hidden;
@@ -291,8 +290,6 @@ p {
 }
 .l-topics--img {
   background-color: antiquewhite;
-  width: 330px;
-  height: 230px;
   border-radius: 4px;
 }
 .l-topics--img img {
