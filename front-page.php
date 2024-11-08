@@ -36,7 +36,7 @@ get_header();
                 <li>
                     <div class="l-topics--img">
                         <img src="./wp-content/uploads/assets/images/img_01.jpg" alt="" width="230" height="160">
-                        <p class="l-topics--title">製品DDDR、2024年12月販売開始</p>
+                        <p class="l-topics--title">開発バーナ2025年販売開始</p>
                     </div>
                 </li>
                 <li>
@@ -66,7 +66,7 @@ get_header();
                 <li>
                     <div class="l-topics--img">
                         <img src="./wp-content/uploads/assets/images/img_01.jpg" alt="" width="230" height="160">
-                        <p class="l-topics--title">製品DDDR、2024年12月販売開始</p>
+                        <p class="l-topics--title">開発バーナ2025年販売開始</p>
                     </div>
                 </li>
                 <li>
