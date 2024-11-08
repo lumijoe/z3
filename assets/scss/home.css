@@ -366,6 +366,9 @@ p {
 .l-news-lists .list-wrapper .l-news-text {
   font-size: 12px;
 }
+.l-news-lists .list-wrapper:first-child {
+  border-top: 0.7px solid #6a6a6a;
+}
 .l-news .btn--newsmore {
   padding-top: 10px;
   padding-bottom: 10px;
