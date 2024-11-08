@@ -143,16 +143,6 @@ get_header();
                     wp_reset_postdata();
                 endif;
                 ?>
-                <li>
-                    <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">サステナビリティ</p>
-                    <p class="l-news-text">テキストが入りますテキストが入ります</p>
-                </li>
-                <li>
-                    <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">お知らせ</p>
-                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
-                </li>
             </ul>
             <a href="<?php echo esc_url(home_url('/newslist-standard')); ?>" tabindex="0" class="btn--newsmore"><span style="font-style: italic;">NEWS</span>一覧へ</a>
         </div>
@@ -191,7 +181,7 @@ get_header();
                 if ($the_query->have_posts()) :
                     while ($the_query->have_posts()) : $the_query->the_post();
                 ?>
-                        <li>
+                        <li class="list-wrapper">
                             <!-- 日時 -->
                             <p class="news-day">
                                 <time class="c-news-date" datetime="<?php echo esc_attr(get_the_date('Y-m-d')); ?>">
@@ -207,7 +197,7 @@ get_header();
                                     if ($terms) :
                                         foreach ($terms as $term) :
                                 ?>
-                                            <li class="tax-term">
+                                            <li class="l-news-label-txt">
                                                 <?php echo esc_html($term->name); ?>
                                             </li>
                                 <?php
@@ -217,7 +207,7 @@ get_header();
                                 ?>
                             </ul>
                             <!-- ニュースタイトル -->
-                            <p class="c-pdl--s">
+                            <p class="l-news-text">
                                 <?php
                                 $news_title = get_field('news_title');
                                 if ($news_title) :
@@ -231,16 +221,6 @@ get_header();
                     wp_reset_postdata();
                 endif;
                 ?>
-                <li>
-                    <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">サステナビリティ</p>
-                    <p class="l-news-text">テキストが入りますテキストが入ります</p>
-                </li>
-                <li>
-                    <p class="news-day">2024/00/00</p>
-                    <p class="l-news-label-txt">お知らせ</p>
-                    <p class="l-news-text">テキストが入りますテキストが入りますテキストが入ります</p>
-                </li>
             </ul>
             <a href="<?php echo esc_url(home_url('/newslist-ir')); ?>" tabindex="0" class="btn--newsmore"><span style="font-style: italic;">IR NEWS</span>一覧へ</a>
 
