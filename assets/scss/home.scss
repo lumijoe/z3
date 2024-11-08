@@ -135,12 +135,13 @@ p {
         &-txt {
             padding-top: 3px;
             padding-bottom: 3px;
-            width: 120px;
-            background-color: bisque;
+            width: 100px;
+            background-color: #232323;
             border-radius: 4px;
             height: fit-content;
             text-align: center;
-            font-size: 12px;
+            font-size: 10px;
+            color: #fff;
         }
     }
     &-lists {
@@ -154,7 +155,7 @@ p {
             padding-bottom: 8px;
             display: grid;
             align-items: center;
-            grid-template-columns: 0.5fr 0.8fr 1.5fr;
+            grid-template-columns: 0.1fr 0.5fr 2fr;
             gap: 15px;
             font-size: 14px;
             height: 60px;
