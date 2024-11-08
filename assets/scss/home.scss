@@ -146,7 +146,8 @@ p {
     &-lists {
         margin-top: 15px;
         margin-bottom: 15px;
-        li {
+
+        .list-wrapper {
             width: auto;
             border-top: 0.7px solid #6a6a6a;
             border-bottom: 0.7px solid #6a6a6a;
@@ -165,6 +166,25 @@ p {
                 font-size: 12px;
             }
         }
+        // li {
+        //     width: auto;
+        //     border-top: 0.7px solid #6a6a6a;
+        //     border-bottom: 0.7px solid #6a6a6a;
+        //     padding-top: 8px;
+        //     padding-bottom: 8px;
+        //     display: grid;
+        //     align-items: center;
+        //     grid-template-columns: 0.5fr 0.8fr 1.5fr;
+        //     gap: 15px;
+        //     font-size: 14px;
+        //     height: 60px;
+        //     .news-day {
+        //         font-size: 12px;
+        //     }
+        //     .l-news-text {
+        //         font-size: 12px;
+        //     }
+        // }
     }
     .btn--newsmore {
         padding-top: 10px;

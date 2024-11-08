@@ -38,30 +38,30 @@ get_header();
                         <img src="./wp-content/uploads/assets/images/img_01.jpg" alt="" width="330" height="230">
 
                     </div>
-                    <p class="l-topics--title">テキストが入りますテキストが入ります</p>
+                    <p class="l-topics--title">製品DDDR、2024年12月販売開始</p>
                 </li>
                 <li>
                     <div class="l-topics--img">
                         <img src="./wp-content/uploads/assets/images/img_02.jpg" alt="" width="330" height="230">
-                        <p class="l-topics--title">テキストが入ります</p>
+                        <p class="l-topics--title">2025春産業フェアに出展</p>
                     </div>
                 </li>
                 <li>
                     <div class="l-topics--img">
                         <img src="./wp-content/uploads/assets/images/img_03.jpg" alt="" width="330" height="230">
-                        <p class="l-topics--title">テキストが入りますお知らせです</p>
+                        <p class="l-topics--title">製品を〇〇会社に提供</p>
                     </div>
                 </li>
                 <li>
                     <div class="l-topics--img">
                         <img src="./wp-content/uploads/assets/images/img_04.jpg" alt="" width="330" height="230">
-                        <p class="l-topics--title">テキストが入りますテキストのお知らせです</p>
+                        <p class="l-topics--title">採用情報を更新</p>
                     </div>
                 </li>
                 <li>
                     <div class="l-topics--img">
                         <img src="./wp-content/uploads/assets/images/img_05.jpg" alt="" width="330" height="230">
-                        <p class="l-topics--title">テキストが入ります</p>
+                        <p class="l-topics--title">海外提携パートナー情報を更新</p>
                     </div>
                 </li>
             </ul>
@@ -103,7 +103,7 @@ get_header();
                 if ($the_query->have_posts()) :
                     while ($the_query->have_posts()) : $the_query->the_post();
                 ?>
-                        <li>
+                        <li class="list-wrapper">
                             <!-- 日時 -->
                             <p class="news-day">
                                 <time class="c-news-date" datetime="<?php echo esc_attr(get_the_date('Y-m-d')); ?>">
@@ -119,7 +119,7 @@ get_header();
                                     if ($terms) :
                                         foreach ($terms as $term) :
                                 ?>
-                                            <li class="tax-term">
+                                            <li class="l-news-label-txt">
                                                 <?php echo esc_html($term->name); ?>
                                             </li>
                                 <?php
@@ -129,7 +129,7 @@ get_header();
                                 ?>
                             </ul>
                             <!-- ニュースタイトル -->
-                            <p class="c-pdl--s">
+                            <p class="l-news-text">
                                 <?php
                                 $news_title = get_field('news_title');
                                 if ($news_title) :

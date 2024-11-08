@@ -348,7 +348,7 @@ p {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.l-news-lists li {
+.l-news-lists .list-wrapper {
   width: auto;
   border-top: 0.7px solid #6a6a6a;
   border-bottom: 0.7px solid #6a6a6a;
@@ -361,10 +361,10 @@ p {
   font-size: 14px;
   height: 60px;
 }
-.l-news-lists li .news-day {
+.l-news-lists .list-wrapper .news-day {
   font-size: 12px;
 }
-.l-news-lists li .l-news-text {
+.l-news-lists .list-wrapper .l-news-text {
   font-size: 12px;
 }
 .l-news .btn--newsmore {
