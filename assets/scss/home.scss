@@ -162,6 +162,10 @@ p {
             // 横一列の場合
             // grid-template-columns: 0.1fr 0.5fr 2fr;
             // height: 60px;
+            &--row {
+                display: flex;
+                flex-direction: row;
+            }
             
             .news-day {
                 font-size: 12px;

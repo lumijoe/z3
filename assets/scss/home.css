@@ -357,6 +357,10 @@ p {
   font-size: 14px;
   height: auto;
 }
+.l-news-lists .list-wrapper--row {
+  display: flex;
+  flex-direction: row;
+}
 .l-news-lists .list-wrapper .news-day {
   font-size: 12px;
 }

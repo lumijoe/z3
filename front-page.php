@@ -250,30 +250,32 @@ get_header();
                     while ($the_query->have_posts()) : $the_query->the_post();
                 ?>
                         <li class="list-wrapper">
-                            <!-- 日時 -->
-                            <p class="news-day">
-                                <time class="c-news-date" datetime="<?php echo esc_attr(get_the_date('Y-m-d')); ?>">
-                                    <?php echo esc_html(get_the_date('Y/m/d')); ?>
-                                </time>
-                            </p>
-                            <!-- タクソノミー -->
-                            <ul class="news-taxonomies" style="display: flex; flex-direction: row; gap:5px; flex-wrap: wrap;">
-                                <?php
-                                $taxonomies = ['newstag'];
-                                foreach ($taxonomies as $taxonomy) {
-                                    $terms = get_the_terms($post->ID, $taxonomy);
-                                    if ($terms) :
-                                        foreach ($terms as $term) :
-                                ?>
-                                            <li class="l-news-label-txt">
-                                                <?php echo esc_html($term->name); ?>
-                                            </li>
-                                <?php
-                                        endforeach;
-                                    endif;
-                                }
-                                ?>
-                            </ul>
+                            <div class="list-wrapper--row">
+                                <!-- 日時 -->
+                                <p class="news-day">
+                                    <time class="c-news-date" datetime="<?php echo esc_attr(get_the_date('Y-m-d')); ?>">
+                                        <?php echo esc_html(get_the_date('Y/m/d')); ?>
+                                    </time>
+                                </p>
+                                <!-- タクソノミー -->
+                                <ul class="news-taxonomies" style="display: flex; flex-direction: row; gap:5px; flex-wrap: wrap;">
+                                    <?php
+                                    $taxonomies = ['newstag'];
+                                    foreach ($taxonomies as $taxonomy) {
+                                        $terms = get_the_terms($post->ID, $taxonomy);
+                                        if ($terms) :
+                                            foreach ($terms as $term) :
+                                    ?>
+                                                <li class="l-news-label-txt">
+                                                    <?php echo esc_html($term->name); ?>
+                                                </li>
+                                    <?php
+                                            endforeach;
+                                        endif;
+                                    }
+                                    ?>
+                                </ul>
+                            </div>
                             <!-- ニュースタイトル -->
                             <p class="l-news-text">
                                 <?php
