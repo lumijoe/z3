@@ -298,6 +298,20 @@ get_header();
     <section style="background-color: rgb(48, 56, 56); height: 350px;">img </section>
     <section style="background-color: rgb(99, 167, 167); height: 350px;">product </section>
 </main>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const titles = document.querySelectorAll(".l-topics--title");
+    const maxLength = 14;  // 最大文字数（必要に応じて調整）
+
+    titles.forEach(function(title) {
+        if (title.textContent.length > maxLength) {
+            title.textContent = title.textContent.slice(0, maxLength) + "...";
+        }
+    });
+});
+
+</script>
+
 <?php
 get_footer(); // footer.php を読み込む
 ?>

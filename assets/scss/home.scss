@@ -98,7 +98,7 @@ p {
         }
     }
     &--title {
-        font-size: 16px;
+        font-size: 14px;
         padding-top: 8px;
         // font-weight: bold;
     }
@@ -156,10 +156,13 @@ p {
             padding-bottom: 8px;
             display: grid;
             align-items: center;
-            grid-template-columns: 0.1fr 0.5fr 2fr;
             gap: 15px;
             font-size: 14px;
-            height: 60px;
+            height: auto;
+            // 横一列の場合
+            // grid-template-columns: 0.1fr 0.5fr 2fr;
+            // height: 60px;
+            
             .news-day {
                 font-size: 12px;
             }
