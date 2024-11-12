@@ -199,6 +199,22 @@ a {
   text-align: center;
 }
 
+.material-symbols-outlined {
+  transform: rotate(-90deg);
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" 20;
+}
+
+.c-pt--m {
+  padding-top: 10px;
+}
+
+.c-border-black60--p310f10 {
+  border: 1px solid #232323;
+  border-radius: 60px;
+  padding: 3px 10px;
+  font-size: 10px;
+}
+
 .c-endicon-arrow--s::after {
   content: "";
   display: inline-block;
@@ -381,4 +397,10 @@ p {
   align-items: center;
   font-size: 12px;
   margin: 30px auto;
+}
+
+.l-flex-center--gap20 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }/*# sourceMappingURL=home.css.map */
