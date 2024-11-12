@@ -110,7 +110,7 @@
             <ul class="l-flex-center--gap60 c-pt--l">
                 <li>
                     <a href="./front-page.php" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/images/img_04.jpg" alt="" width="168" height="248" style="object-fit: cover;">
+                        <img src="./wp-content/uploads/assets/images/img_04.jpg" alt="" width="168" height="248" style="object-fit: cover;">
                         <p>テキストが入ります</p>
                     </a>
                 </li>
@@ -962,20 +962,21 @@
 
 
    </main>
-   <footer style="height: 400px; background-color: bisque;">
-        <section style="background-color: aquamarine; height: 300px;">footer-first</section>
-        <section style="background-color: rgb(255, 249, 127); height: 120px;">footer-second</section>
-   </footer>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-   <script>
+   <!-- footer -->
+<footer style="height: 400px; background-color: bisque;">
+    <section style="background-color: aquamarine; height: 812px;">footer-first</section>
+    <section style="background-color: rgb(255, 249, 127); height: 134px;">footer-second</section>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script>
     const maxLength = 30;
     const textOverM = document.querySelectorAll('.textoverm');
     textOverM.forEach((element) => {
-      if (element.textContent.length > maxLength) {
-        element.textContent = element.textContent.slice(0, maxLength) + '...';
-      }
+        if (element.textContent.length > maxLength) {
+            element.textContent = element.textContent.slice(0, maxLength) + '...';
+        }
     });
-  </script>
-
+</script>
 </body>
+
 </html>

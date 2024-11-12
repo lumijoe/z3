@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/scss/products.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/scss/newsstandard.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=expand_circle_down" />
     <title>zero3 | 分野Aページ</title>
     <?php wp_head(); ?>
 </head>
@@ -25,6 +26,7 @@
             <h1 class="header-logo"><a href="<?php echo esc_url(home_url()); ?>" style="color:#fff!important;">logo</a></h1>
             <nav class="header-nav c-flexcol">
                 <ul class="header-nav--first c-flexrow" style="gap: 20px;">
+                    <li style="color:#fff!important;"><a href="<?php echo esc_url(home_url('/p01')); ?>" style="color:#fff!important;">製品分野01</a></li>
                     <li style="color:#fff!important;"><a href="<?php echo esc_url(home_url('/products01#01search')); ?>" style="color:#fff!important;">検索A</a></li>
                     <li style="color:#fff!important;"><a href="<?php echo esc_url(home_url('/products02#02search')); ?>" style="color:#fff!important;">検索B</a></li>
                     <li style="color:#fff!important;"><a href="<?php echo esc_url(home_url('/products03#03search')); ?>" style="color:#fff!important;">検索C</a></li>
