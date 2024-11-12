@@ -172,6 +172,7 @@ get_header();
                     while ($the_query->have_posts()) : $the_query->the_post();
                 ?>
                         <li class="list-wrapper">
+                        <div class="list-wrapper--row">
                             <!-- 日時 -->
                             <p class="news-day">
                                 <time class="c-news-date" datetime="<?php echo esc_attr(get_the_date('Y-m-d')); ?>">
@@ -196,6 +197,7 @@ get_header();
                                 }
                                 ?>
                             </ul>
+                        </div>
                             <!-- ニュースタイトル -->
                             <p class="l-news-text">
                                 <?php
