@@ -235,6 +235,24 @@ a {
   font-size: 10px;
 }
 
+.c-f--m {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.c-f--l-circlehushtag {
+  font-size: 12px;
+  border: 1px solid #232323;
+  border-radius: 60px;
+  display: inline-flex;
+  padding: 6px 12px;
+  margin-top: 15px;
+}
+
+.c-f--l-circlehushtag::before {
+  content: "# ";
+}
+
 .c-endicon-arrow--s::after {
   content: "";
   display: inline-block;
@@ -429,4 +447,8 @@ p {
   display: flex;
   justify-content: center;
   gap: 60px;
+}
+
+section {
+  overflow-x: hidden;
 }/*# sourceMappingURL=home.css.map */
