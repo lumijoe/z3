@@ -205,7 +205,27 @@ a {
 }
 
 .c-pt--m {
-  padding-top: 10px;
+  padding-top: 15px;
+}
+
+.c-pt--l {
+  padding-top: 50px;
+}
+
+.c-pt--xl {
+  padding-top: 70px;
+}
+
+.c-mt--m {
+  margin-top: 15px;
+}
+
+.c-mt--l {
+  margin-top: 50px;
+}
+
+.c-mt--xl {
+  margin-top: 70px;
 }
 
 .c-border-black60--p310f10 {
@@ -403,4 +423,10 @@ p {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+.l-flex-center--gap60 {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
 }/*# sourceMappingURL=home.css.map */
