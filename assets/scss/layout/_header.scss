@@ -1,9 +1,40 @@
 .l-header {
-    background-color: antiquewhite;
     width: 100%;
-    height: 105px;
+    height: 129px;
     margin: 0 auto;
+    &-inner {
+        height: 100%;
+        &--level1 {
+            height: 34px;
+            background-color: rgb(180, 180, 180);
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            &-left {
+            }
+            &-right {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+                
+        }
+        &--level2 {
+            height: 95px;
+            background-color: rgb(141, 142, 168);
+            width: 100%;
+            // display: flex;
+            // flex-direction: row;
+            // justify-content: space-between;
+        }
+
+    }
     .header-inner {
+        height: 100%;
+
         margin-left: 5%; 
         padding: 4px 0 4px 0;
         background-color: rgb(49, 52, 131);
