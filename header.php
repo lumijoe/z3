@@ -26,26 +26,26 @@
                 </div>
                 <div class="l-header-inner--level1-right">
                     <ul class="header-right">
-                        <li class="icon-set">
-                            <i class="icon1"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_add_circle.svg" alt=""></i>
-                            <i class="icon2"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_add_circle.svg" alt=""></i>
+                        <li class="nav-item">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_add_circle.svg" alt="" width="20px" height="20px">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_add_circle.svg" alt="" width="20px" height="20px">
                         </li>
                         <li class="nav-item">
                             <a href="#" target="_blank" class="btn-round">
-                                <i class="fas fa-users" style="font-size:12px;"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_add_circle.svg" alt=""></i>
-                                採用情報
+                                <p class="fas fa-users" ><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_add_circle.svg" alt="" width="12px" height="12px" style="margin-right:2px;">採用情報</p>
+                                
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" target="_blank" class="btn-round">
-                                <i class="fas fa-users" style="font-size:12px;"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_add_circle.svg" alt=""></i>
-                                資料ダウンロード
+                                <p class="fas fa-users"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_add_circle.svg" alt="" width="12px" height="12px" style="margin-right:2px;">資料ダウンロード</p>
+                                
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" target="_blank" class="btn-round">
-                                <i class="fas fa-users" style="font-size:12px;"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_add_circle.svg" alt=""></i>
-                                お問い合わせ一覧
+                                <p class="fas fa-users" ><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon_add_circle.svg" alt="" width="12px" height="12px" style="margin-right:2px;">お問い合わせ一覧</p>
+                                
                             </a>
                         </li>
                     </ul>
