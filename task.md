@@ -2,3 +2,4 @@
 front-page.phpの変更
 frontpage.mdにbeforeコード残した
 header.mdにbeforeコード残した
+header.phpの変更
