@@ -96,7 +96,45 @@ get_header();
             </ul>
         </div>
     </section>
+    <!-- <section class="l-topics">
+        <h2 class="h2-ttl--main">Topics</h2>
+        <p class="h2-ttl--sub">トピックス</p>
+        <div class="l-swiper">
+            <ul>
+                <li>
+                    <div class="l-topics--img">
+                        <img src="./wp-content/uploads/assets/images/img_01.jpg" alt="" width="330" height="230">
 
+                    </div>
+                    <p class="l-topics--title">製品DDDR、2024年12月販売開始</p>
+                </li>
+                <li>
+                    <div class="l-topics--img">
+                        <img src="./wp-content/uploads/assets/images/img_02.jpg" alt="" width="330" height="230">
+                        <p class="l-topics--title">2025春産業フェアに出展</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="l-topics--img">
+                        <img src="./wp-content/uploads/assets/images/img_03.jpg" alt="" width="330" height="230">
+                        <p class="l-topics--title">製品を〇〇会社に提供</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="l-topics--img">
+                        <img src="./wp-content/uploads/assets/images/img_04.jpg" alt="" width="330" height="230">
+                        <p class="l-topics--title">採用情報を更新</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="l-topics--img">
+                        <img src="./wp-content/uploads/assets/images/img_05.jpg" alt="" width="330" height="230">
+                        <p class="l-topics--title">海外提携パートナー情報を更新</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section> -->
     <section class="l-news">
         <!-- STANDARD NEWS -->
         <div class=l-news-areawrapper>
